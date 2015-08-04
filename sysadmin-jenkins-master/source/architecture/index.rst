@@ -6,4 +6,6 @@ Architecture
 .. toctree::
    :maxdepth: 2
    
-   ckan-architecture.rst
+   jenkins-architecture.rst
+   jenkins-installation.rst
+   jenkins-start.rst
