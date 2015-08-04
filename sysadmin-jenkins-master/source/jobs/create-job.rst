@@ -69,3 +69,50 @@ days), or to keep no more than a specified number of builds. If a certain build 
 value, you can always tell Jenkins to keep it forever by using the Keep forever button on the build details
 page (see Figure, “Keeping a build job forever”). Note that this button will only appear if you have
 asked Jenkins to discard old builds.
+
+Advanced Project Options
+------------------------
+
+The Advanced Project options contains, as the name suggests, configuration options that are less
+frequently required. You need to click on the Advanced button for them to appear (see Figure 5.4, “To
+display the Advanced Options, you need to click on the Advanced button”).
+.. figure:: img/Advanced_Options.png
+
+	    To display the Advanced Options, you need to click on the Advanced button
+
+The Quiet Period option in the build job configuration simply lets you override the system-wide
+quiet period defined in the Jenkins System Configuration screen. This option is mainly used for version control systems that don’t support atomic
+commits, such as CVS, but it is also sometimes used in teams where developers have the habit of
+committing their work in several small commits.
+The “Block build when upstream project is building” option is useful when several related projects are
+affected by a single commit, but they must be built in a specific order. If you activate this option, Jenkins
+will wait until any upstream build jobs (see  “Build Triggers”) have finished before starting
+this build.
+For instance, when you release a new version of a multimodule Maven project, version number updates
+will happen in many, if not all, of the project modules. Suppose, for example, that we have added a web
+application to the Game of Life project we used in Chapter 2, Your First Steps with Jenkins, setting it up
+as a separate Maven project. When we release a new version of this project, both the core and the web
+application version numbers will be updated (see Figure 5.5, “The “Block build when upstream project
+is building” option is useful when a single commit can affect several related projects”). Before we can
+build the web application, we need to build a new version of the original Game of Life core module.
+However if you had a separate freestyle build job for each module, then the build jobs for both the core
+and the web application would start simultaneously. The web application build job will fail if the core
+build job hasn’t produced a new version of the core module for it, even if there are no test failures.
+To avoid this issue, you could set up the web application build job to only start once the core build
+has successfully terminated. However this would mean that the web application would never be built if
+changes were made that only affected it, and not the core module. A better approach is to use the “Block
+build when upstream project” option. In this case, when the version numbers are updated in version
+control, Jenkins will schedule both builds to be executed. However it will wait until the core build has
+finished before starting the web application build.
+
+.. figure:: img/Blockbuild.png
+	    The “Block build when upstream project is building” option is useful when a single commit can affect several related projects
+
+You can also override the default workspace used by Jenkins to check out the source code and build
+your project. Normally, Jenkins will create a special workspace directory for your project, which can be
+found in the project’s build job directory (see Section 3.13, “What’s in the Jenkins Home Directory”).
+This works fine in almost all cases. However, there are times when you need to override this option,
+and force Jenkins to use a special directory. One common example of this is if you want several build
+jobs to all work successively in the same directory. You can override the default directory by ticking
+the “Use custom workspace” option, and providing the path yourself. The path can be either absolute,
+or relative to Jenkins’s home directory.
