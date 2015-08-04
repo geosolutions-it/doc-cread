@@ -76,6 +76,7 @@ Advanced Project Options
 The Advanced Project options contains, as the name suggests, configuration options that are less
 frequently required. You need to click on the Advanced button for them to appear (see Figure 5.4, “To
 display the Advanced Options, you need to click on the Advanced button”).
+
 .. figure:: img/Advanced_Options.png
 
 	    To display the Advanced Options, you need to click on the Advanced button
