@@ -1,8 +1,11 @@
+.. _global_setup:
+
 ##################
 Global setup
 ##################
 
 The platform-independent binary is a GeoServer web application bundled inside `Jetty`_, a lightweight and portable application server.
+
 .. _Jetty: http://eclipse.org/jetty/
 
 .. note::

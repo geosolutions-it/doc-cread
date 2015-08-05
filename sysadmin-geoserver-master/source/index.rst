@@ -1,13 +1,13 @@
 .. _mainindex.rst:
 
 C-READ Geoserver Project
-======================
+========================
 
 Welcome to the C-READ Geoserver Project documentation v\ |release|.  
 
 This documentation is a guide describing the system architecture and how to administer a system running Geoserver.
  
-The main sections describe how to install and configure the basic OS packages, the system architecture and the harvesting.
+The main sections describe how to install and configure the basic OS packages and how to configure the data directory.
 
 
 Table of contents
@@ -19,6 +19,7 @@ Table of contents
     preface.rst
     overview/index.rst
     installation/index.rst       
+    datadirectory/index.rst
  
 Indices and tables
 ==================

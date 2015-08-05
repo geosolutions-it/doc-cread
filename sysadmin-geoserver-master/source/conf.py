@@ -36,9 +36,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General substitutions.
-project = u'DRDSI CKAN'
+project = u'GEOSERVER'
 manual = u'doc'
-copyright = u'2014 GeoSolutions'
+copyright = u'2015 GeoSolutions'
 
 # The default replacements for |version| and |release|, also used in various
 # other places throughout the built documents.
@@ -46,7 +46,7 @@ copyright = u'2014 GeoSolutions'
 # The short X.Y version.
 version = '1.0'
 # The full version, including alpha/beta/rc tags.
-release = '20140422'
+release = '20150805'
 
 language = 'en'
 
