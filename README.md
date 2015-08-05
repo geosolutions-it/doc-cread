@@ -1,2 +1,2 @@
-doc-sysadmin-ckan
-=================
+doc-cread
+=========
