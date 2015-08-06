@@ -1,2 +1,0 @@
-doc-sysadmin-ckan
-=================
