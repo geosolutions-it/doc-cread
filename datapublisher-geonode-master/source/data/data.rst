@@ -6,7 +6,7 @@ C-READ GeoNode
 ##############
 
 C-READ GeoNode System is a web-based application platform for developing geospatial information systems (GIS) and for deploying spatial data infrastructures (SDI).
-The user interface of C-READ GeoNode System as well as the organizational hierarchy of data follows this breakdown:
+The user interface of C-READ GeoNode System, as well as the hierarchical organization of data, follows this breakdown:
 
 - Category 1: Meteorological and Hydrological Data and Projections
 - Category 2: Hazards and Risks
@@ -37,7 +37,7 @@ Without being logged in, you are limited to read-only access of public layers.
 Data Preview
 ============
 
-Choose a datasets. 
+Choose a dataset and click on dataset name. 
 
 .. image:: img/GeoNodeDataPreviewDatasets.png
 
@@ -93,9 +93,30 @@ Document Types
 
 
 
+
 #########
 Searching
 #########
+
+In C-READ GeoNode welcome page, click the Search button to bring up the Search page. 
+
+.. image:: img/C-READ_SearchingPage.png
+
+C-READ GeoNode welcome page
+
+.. image:: img/C-READ_SearchingPage1.png
+
+Search page
+
+This page contains a wealth of options for customizing a search for various information on C-READ GeoNode. This search form allows for much more fine-tuned searches than the simple search box is available at the top of every page. It is possible to search data by Text, Categories, Type, Keywords, Date, Regions or Extent.
+
+
+
+
+
+.. image:: img/C-READ_Searching.png
+
+Search box available at the top of every page 
 
 
 
@@ -191,7 +212,7 @@ Edit Layers window
 
 Edit Metadata page
 
-4. In the Edit Advanced Metadata page edit the details of selected layer.
+5. In the Edit Advanced Metadata page edit the details of selected layer.
 
 .. image:: img/C-READ_EditMetadataAdvance.png
 
@@ -199,7 +220,7 @@ Edit Metadata page
 Edit Advanced Metadata page
 
 
-5. To update metadata, click the Update button at the bottom.
+6. To update metadata, click the Update button at the bottom.
 
 
 
@@ -215,22 +236,67 @@ Edit style task can be performed only by the user who have the permission to do 
 
 3. In the Edit Layer window click Edit button under Style icon. In this interface is it possible to change the style of layers. C-READ GeoNode allows to edit layer styles graphically, without the need to resort to programming or requiring a technical background.
 
-- This layer has one style and one rule in that style. Click the rule (Untitled 1) to select it, and then click on Edit below it. 
-- Edit the style. You can choose from simple shapes, add labels, and even adjust the look of the points based on attribute values and scale.
-- When done, click Save, then click on the word Layers to return to the layer list.
-
-
-
-
+In the following example the layer has one style and one rule in that style. Click *Edit* in Styles menu change Title and Abstract of the selected Style. 
 
 .. image:: img/C-READ_LayerStyles.png
 
-4. In the Edit Layer window click MAnage button under Style icon.
+Layer Styles window
+
+.. image:: img/C-READ_LayerStyles_UserStyle.png
+
+User Styles window
+
+Click the Rule (Untitled 1) to select it, and then click on *Edit* below it. Edit the style choosing Basic tab to edit symbology of layers, Labels to add and manage labels and Advanced to manage styles by scale and condition. When done, click *Save*, then click on the word Layers to return to the layer list.
+
+
+.. image:: img/C-READ_StyleRuleBasic.png
+
+Basic Style Rule window
+
+.. image:: img/C-READ_StyleRuleLabel.png
+
+Labels Style Rule windows
+
+.. image:: img/C-READ_StyleRuleAdvanced.png
+
+Advanced Style Rule windows
+
+4. In the Edit Layer window click Manage button under Style icon.
+Manage Styles function allows to assign available style to selected layers.
+
+.. image:: img/C-READ_ManageStyles.png
 
 
 ##############
 Creating a map
 ##############
+
+In C-READ GeoNode System maps are comprised of various layers and their styles. Layers can be both local layers in C-READ GeoNode as well as remote layers either served from other WMS servers or by web service layers such as Google or MapQuest. 
+C-READ GeoNode maps also contain other information such as map zoom and extent, layer ordering, and style. 
+
+1. Click the Maps link on the top toolbar. This will bring up the list of maps then click on Create a New Map.
+
+.. image:: img/C-READ_ExploreMaps.png
+
+2. A map composition interface will display. In this interface there is a toolbar, layer list, and map window. The map window contains the MapQuest OpenStreetMap layer by default. There are other service layers available here as well: Bing Aerial With Labels, MapQuest Imagery and OpenStreetMap.
+
+.. image:: img/C-READ_CreateMaps.png
+
+3. Click on the New Layers button and select Add Layers.
+
+.. image:: img/C-READ_AddLayersMaps.png
+
+4. Select layers by clicking and click add Layers to add it to the map. The layers will be added to the map. Click Done (right next to Add Layers at the bottom) to return to the main layers list. The style of added layer could be edited clicking on Layer Style icon.
+
+5. Saving map: click on the Map button in the toolbar, and select Save Map. 
+
+.. image:: img/C-READ_SaveMaps.png
+
+6. Enter a title and abstract for your map. 
+
+7. Click Save. Notice that the link on the top right of the page changed to reflect the map’s name.
+
+
 
 ###################################
 Creating a map using a map template
