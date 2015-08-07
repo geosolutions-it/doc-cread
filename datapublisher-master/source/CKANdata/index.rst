@@ -1,13 +1,13 @@
 .. _CKANdata_index:
 
-CKAN: Data Management 
-=====================
+CKAN: Data Management Guide 
+===========================
 
 .. toctree::
    :maxdepth: 2
    
-   ckan-datapublischer-guide.rst
-   CKANdata.rst
+   C-READ_CKAN.rst
+   ckan-datapublisher-guide.rst
    DataPreview.rst
    MapPreview.rst   
    
