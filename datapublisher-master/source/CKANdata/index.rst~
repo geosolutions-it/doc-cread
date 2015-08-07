@@ -1,0 +1,13 @@
+.. _CKANdata_index:
+
+Preview 
+=======
+
+.. toctree::
+   :maxdepth: 2
+   
+   CKANdata.rst
+   DataPreview.rst
+   MapPreview.rst   
+   
+   
