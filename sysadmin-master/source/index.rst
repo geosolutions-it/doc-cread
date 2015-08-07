@@ -21,6 +21,7 @@ Table of contents
     jenkins-jobs/index.rst
     geonode-architecture/index.rst
     geonode-install/index.rst
+    geonode-maps/index.rst
     geoserver-overview/index.rst
     geoserver-installation/index.rst
     geoserver-datadirectory/index.rst
