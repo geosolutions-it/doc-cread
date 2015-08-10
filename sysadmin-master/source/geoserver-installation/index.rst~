@@ -1,9 +1,0 @@
-.. _installation_index:
-
-Geoserver Installation
-======================
-
-.. toctree::
-   :maxdepth: 2
-   
-   installation.rst
