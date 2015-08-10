@@ -19,11 +19,13 @@ Layers
 ======
 
 Layers are a primary component of C-READ GeoNode. Layers are a published resource representing a raster or vector spatial data source. Layers also can be associated with metadata, ratings, and comments.
-By clicking the Layers link you will be brought to the Layers menu where a new subtoolbar can be seen. This toolbar allows you to Explore, Search and Upload layers.
-GeoNode allows the user to upload vector (currently only Shapefiles) and raster data in their original projections using a web form. Vector data is uploaded in ESRI Shapefile format and satellite imagery and other kinds of raster data are uploaded as GeoTIFFs.
+By clicking the Layers link you will be brought to the Layers menu where a new subtoolbar can be seen. 
 
 .. image:: img/C-READ_WelcomePageDocumentsLayers.png
 
+This toolbar allows you to Explore, Search and Upload layers. GeoNode allows the user to upload vector (currently only Shapefiles) and raster data in their original projections using a web form. Vector data is uploaded in ESRI Shapefile format and satellite imagery and other kinds of raster data are uploaded as GeoTIFFs.
+
+.. image:: img/GeoNode_ExploreLayers.png
 
 ====
 Maps
@@ -31,26 +33,27 @@ Maps
 
 Maps are a primary component of C-READ GeoNode. Maps are comprised of various layers and their styles. Layers can be both local layers in GeoNode as well as remote layers either served from other WMS servers or by web service layers such as Google or MapQuest.
 C-READ GeoNode maps also contain other information such as map zoom and extent, layer ordering, and style.
-By clicking the Maps link you will be brought to the Maps menu where a new subtoolbar can be seen. This toolbar allows you create a map based on the uploaded layers combine them with some existing layers and a remote web service layer, and then share the resulting map for public viewing.
-
-Once the data has been uploaded, C-READ GeoNode lets the user search for it geographically or via keywords and create maps.
-All the layers are automatically reprojected to web mercator for maps display, making it possible to use different popular base layers, like Open Street Map, Google Satellite or Bing layers.
-
+By clicking the Maps link you will be brought to the Maps menu where a new subtoolbar can be seen. 
 
 .. image:: img/C-READ_WelcomePageDocumentsMaps.png
+
+This toolbar allows you create a map based on the uploaded layers combine them with some existing layers and a remote web service layer, and then share the resulting map for public viewing. Once the data has been uploaded, C-READ GeoNode lets the user search for it geographically or via keywords and create maps. All the layers are automatically reprojected to web mercator for maps display, making it possible to use different popular base layers, like Open Street Map, Google Satellite or Bing layers.
+
+.. image:: img/GeoNode_ExploreMaps.png
 
 
 =========
 Documents
 =========
 
-COMPLETARE!!!
-
-
-Special importance is given to standard metadata formats like ISO 19139:2007. After the upload is finished, the user is presented with a form to fill in the metadata and it is made available using a CSW interface. Users may also upload a metadata XML document (in ISO, FGDC, or Dublin Core format) to fill in key GeoNode metadata elements automatically.
-
+As for the layers and maps C-READ GeoNode allows to publish tabular and text data manage metadata and associated documents. By clicking the Documents link you will be brought to the Documents menu where a new subtoolbar can be seen. 
 
 .. image:: img/C-READ_WelcomePageDocumentsDocuments.png
+
+Through the document datailed page is possible to view, download and manage a document.
+
+
+.. image:: img/GeoNodeDataExploreDocuments.png
 
 
 
