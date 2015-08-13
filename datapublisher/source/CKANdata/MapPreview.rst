@@ -39,4 +39,3 @@ Layer Ratings tab
 .. image:: img/GeoNodeLayerCommentsTab.png
 
 Layer Comments tab
-

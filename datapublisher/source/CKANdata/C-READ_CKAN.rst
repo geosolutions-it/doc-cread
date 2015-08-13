@@ -22,4 +22,3 @@ The user interface of C-READ GeoNode System, as well as the hierarchical organiz
 .. image:: img/DataCategory.png
 
             C-READ Data category
-
