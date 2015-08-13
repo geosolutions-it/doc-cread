@@ -9,15 +9,14 @@ Without being logged in, you are limited to read-only access of public layers.
 CKAN: Data Preview
 ==================
 
-Choose a dataset and click on dataset name. 
+Choose a dataset and click on dataset name.
 
 .. image:: img/GeoNodeDataPreviewDatasets.png
 
-Click Explore button and choose Preview. Table data could be visualized as: Grid, Graph or Map. 
+Click Explore button and choose Preview. Table data could be visualized as: Grid, Graph or Map.
 
 .. image:: img/GeoNodeDataPreviewPreview.png
 
 Scroll down the page toward the bottom to see Additional Information.
 
 .. image:: img/GeoNodeDataPreviewAdditionalInformation.png
-
