@@ -1,7 +1,7 @@
 .. _main_index:
-===========================================
-Geonode: Components Reference documentation
-===========================================
+========================
+C-READ Geonode: Overview
+========================
 
 In this section, will found information about each and every component of Geonode, for example geoserver, geonode settings, security.
 

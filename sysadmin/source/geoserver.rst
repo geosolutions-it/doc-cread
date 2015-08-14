@@ -4,6 +4,6 @@ GeoServer
 .. toctree::
     :maxdepth: 2
 
-    geoserver-overview/index.rst
-    geoserver-installation/index.rst
-    geoserver-datadirectory/index.rst
+    geoserver/geoserver-overview/index.rst
+    geoserver/geoserver-installation/index.rst
+    geoserver/geoserver-datadirectory/index.rst
