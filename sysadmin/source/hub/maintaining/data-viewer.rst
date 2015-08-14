@@ -19,7 +19,7 @@ The CKAN resource page can contain one or more visualizations of the resource
 data or file contents (a table, a bar chart, a map, etc). These are commonly
 referred to as *resource views*.
 
-.. image:: /images/views_overview.png
+.. image:: ../images/views_overview.png
 
 The main features of resource views are:
 
@@ -52,7 +52,7 @@ button on the resource page and then on the *Views* tab. From here you can
 create new views, update or delete existing ones and reorder them.
 
 
-.. image:: /images/manage_views.png
+.. image:: ../images/manage_views.png
 
 
 The *New view* dropdown will show the available view types for this particular
@@ -94,7 +94,7 @@ These don't require further setup and can be directly added to the
 Data Explorer
 +++++++++++++
 
-.. image:: /images/recline_view.png
+.. image:: ../images/recline_view.png
 
 View plugin: ``recline_view``
 
@@ -120,7 +120,7 @@ DataStore Grid
 ++++++++++++++
 
 
-.. image:: /images/recline_grid_view.png
+.. image:: ../images/recline_grid_view.png
 
 View plugin: ``recline_grid_view``
 
@@ -131,7 +131,7 @@ This plugin requires data to be in the DataStore.
 DataStore Graph
 +++++++++++++++
 
-.. image:: /images/recline_graph_view.png
+.. image:: ../images/recline_graph_view.png
 
 View plugin: ``recline_graph_view``
 
@@ -145,7 +145,7 @@ This plugin requires data to be in the DataStore.
 DataStore Map
 +++++++++++++
 
-.. image:: /images/recline_map_view.png
+.. image:: ../images/recline_map_view.png
 
 View plugin: ``recline_map_view``
 
@@ -160,7 +160,7 @@ This plugin requires data to be in the DataStore.
 Text view
 +++++++++
 
-.. image:: /images/text_view.png
+.. image:: ../images/text_view.png
 
 View plugin: ``text_view``
 
@@ -176,7 +176,7 @@ the `Resource Proxy`_ plugin.
 Image view
 ++++++++++
 
-.. image:: /images/image_view.png
+.. image:: ../images/image_view.png
 
 View plugin: ``image_view``
 
@@ -187,7 +187,7 @@ URL on the edit view form.
 Web page view
 +++++++++++++
 
-.. image:: /images/webpage_view.png
+.. image:: ../images/webpage_view.png
 
 View plugin: ``webpage_view``
 

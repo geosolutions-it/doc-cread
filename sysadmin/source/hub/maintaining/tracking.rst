@@ -88,7 +88,7 @@ Once you've enabled page view tracking on your CKAN site, you can view datasets
 most-popular-first by selecting ``Popular`` from the ``Order by:`` dropdown on
 the dataset search page:
 
-.. image:: /images/sort-datasets-by-popularity.png
+.. image:: ../images//sort-datasets-by-popularity.png
 
 The datasets are sorted by their number of recent views.
 
@@ -111,8 +111,6 @@ Once you've enabled page view tracking on your CKAN site, popular datasets and
 resources (those with more than 10 views) will be highlighted with a "popular"
 badge and a tooltip showing the number of views:
 
-.. image:: /images/popular-dataset.png
+.. image:: ../images/popular-dataset.png
 
-.. image:: /images/popular-resource.png
-
-
+.. image:: ../images/popular-resource.png
