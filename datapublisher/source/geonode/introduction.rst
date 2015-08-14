@@ -1,7 +1,8 @@
 .. _CKANdata:
 
+############
 Introduction
-------------
+############
 
 C-READ GeoNode System is a web-based application platform for developing geospatial information systems (GIS) and for deploying spatial data infrastructures (SDI).
 The user interface of C-READ GeoNode System, as well as the hierarchical organization of data, follows this breakdown:

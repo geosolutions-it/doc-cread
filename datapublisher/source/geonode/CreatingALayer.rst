@@ -41,7 +41,7 @@ Upload
 
 Upload task can be performed only by the user who have the permission to do it.
 
-1. To add a layer to your account, navigate to the C_READ GeoNode welcome page. 
+1. To add a layer to your account, navigate to the C_READ GeoNode welcome page.
 
 2. By clicking the Layers link you will be brought to the Layers menu where a new subtoolbar can be seen. This toolbar allows you to Explore, Search and Upload layers.
 
@@ -67,9 +67,9 @@ Edit metadata
 
 Edit metadata task can be performed only by the user who have the permission to do it.
 
-1. In the Explore Layer page choose a Layer that you want to edit clicking over the name of layer or in the preview window.  
+1. In the Explore Layer page choose a Layer that you want to edit clicking over the name of layer or in the preview window.
 
-.. image:: img/C-READ_ExploreLayers.png  
+.. image:: img/C-READ_ExploreLayers.png
 
 2. In the Edit Layers page click the Edit Layer button.
 
@@ -108,13 +108,13 @@ Edit style
 
 Edit style task can be performed only by the user who have the permission to do it.
 
-1. In the Explore Layer page choose a Layer that you want to edit clicking over the name of layer or in the preview window.  
+1. In the Explore Layer page choose a Layer that you want to edit clicking over the name of layer or in the preview window.
 
 2. In the Edit Layers page click the Edit Layer button.
 
 3. In the Edit Layer window click Edit button under Style icon. In this interface is it possible to change the style of layers. C-READ GeoNode allows to edit layer styles graphically, without the need to resort to programming or requiring a technical background.
 
-In the following example the layer has one style and one rule in that style. Click *Edit* in Styles menu change Title and Abstract of the selected Style. 
+In the following example the layer has one style and one rule in that style. Click *Edit* in Styles menu change Title and Abstract of the selected Style.
 
 .. image:: img/C-READ_LayerStyles.png
 
@@ -143,5 +143,3 @@ Advanced Style Rule windows
 Manage Styles function allows to assign available style to selected layers.
 
 .. image:: img/C-READ_ManageStyles.png
-
-

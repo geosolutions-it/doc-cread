@@ -19,7 +19,3 @@ In C-READ GeoNode welcome page you can view and modify existing spatial layers a
 3. You will be returned to the welcome page. An email will be sent confirming that you have signed up. While you are now logged in, you will need to confirm your account. Navigate to the link that was sent in the email.
 
 4. By clicking Confirm you will be returned to the homepage. Now you’ve registered an account, you are able to add layers to it as well as create maps and share those with other users.
-
-
-
-

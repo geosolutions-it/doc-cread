@@ -19,7 +19,7 @@ Layers
 ======
 
 Layers are a primary component of C-READ GeoNode. Layers are a published resource representing a raster or vector spatial data source. Layers also can be associated with metadata, ratings, and comments.
-By clicking the Layers link you will be brought to the Layers menu where a new subtoolbar can be seen. 
+By clicking the Layers link you will be brought to the Layers menu where a new subtoolbar can be seen.
 
 .. image:: img/C-READ_WelcomePageDocumentsLayers.png
 
@@ -33,7 +33,7 @@ Maps
 
 Maps are a primary component of C-READ GeoNode. Maps are comprised of various layers and their styles. Layers can be both local layers in GeoNode as well as remote layers either served from other WMS servers or by web service layers such as Google or MapQuest.
 C-READ GeoNode maps also contain other information such as map zoom and extent, layer ordering, and style.
-By clicking the Maps link you will be brought to the Maps menu where a new subtoolbar can be seen. 
+By clicking the Maps link you will be brought to the Maps menu where a new subtoolbar can be seen.
 
 .. image:: img/C-READ_WelcomePageDocumentsMaps.png
 
@@ -46,7 +46,7 @@ This toolbar allows you create a map based on the uploaded layers combine them w
 Documents
 =========
 
-As for the layers and maps C-READ GeoNode allows to publish tabular and text data manage metadata and associated documents. By clicking the Documents link you will be brought to the Documents menu where a new subtoolbar can be seen. 
+As for the layers and maps C-READ GeoNode allows to publish tabular and text data manage metadata and associated documents. By clicking the Documents link you will be brought to the Documents menu where a new subtoolbar can be seen.
 
 .. image:: img/C-READ_WelcomePageDocumentsDocuments.png
 
@@ -54,15 +54,3 @@ Through the document datailed page is possible to view, download and manage a do
 
 
 .. image:: img/GeoNodeDataExploreDocuments.png
-
-
-
-
-
-
-
-
-
-
-
-

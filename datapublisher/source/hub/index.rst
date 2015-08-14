@@ -4,7 +4,7 @@ User guide
 ----------
 
 .. toctree::
-    :maxdepth: 0
+    :maxdepth: 1
 
     ckan-datapublisher-guide.rst
 
