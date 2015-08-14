@@ -5,9 +5,9 @@ which makes it easy to develop extensions and links with other information syste
 
 
 
--------------
-What is CKAN?
--------------
+--------
+Overview
+--------
 
 CKAN is a tool for making open data websites. (Think of a content management
 system like WordPress - but for data, instead of pages and blog posts.) It
@@ -80,9 +80,9 @@ possibility of a wiki-like datahub.
     made it impossible for users to create new organizations via the UI. You can
     try out all the features described at http://demo.ckan.org.
 
-----------
-Using CKAN
-----------
+-------------------
+Usage Documentation
+-------------------
 
 Registering and logging in
 ==========================
