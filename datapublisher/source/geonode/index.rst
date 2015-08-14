@@ -3,7 +3,6 @@
 .. toctree::
    :maxdepth: 2
 
-   introduction.rst
    UserRegistration.rst
    DocumentTypes.rst
    Searching.rst
