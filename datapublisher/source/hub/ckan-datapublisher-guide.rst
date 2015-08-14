@@ -1,10 +1,7 @@
-==========
-User guide
-==========
 
-This user guide covers using CKAN's web interface to organize, publish and find
-data. CKAN also has a powerful API (machine interface), which makes it easy to
-develop extensions and links with other information systems.
+This user guide covers using C-READ Hub's web interface to organize, publish and find
+data. C-READ Hub is based on CKAN wich has a powerful API (machine interface),
+which makes it easy to develop extensions and links with other information systems.
 
 
 

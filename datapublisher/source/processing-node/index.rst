@@ -1,6 +1,3 @@
-Processing Node
-===============
-
 Overview
 ''''''''
 

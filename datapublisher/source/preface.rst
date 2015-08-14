@@ -6,10 +6,10 @@ Preface
 About this doc
 --------------
 
-This document provides information about the C-READ data-publisching. 
+This document provides information about the C-READ data-publisching.
 
 It will explain how to publish data and datasets and how to manage data.
-  
+
 
 
 License Information
@@ -19,13 +19,13 @@ License Information
 Software
 ````````
 
-All the software used in the C-READ CKAN project is release under open source licences.    
+All the software used in the C-READ Hub project is release under open source licences.
 Namely:
- 
+
  - `CKAN <http://ckan.org/>`_ v2.2: :term:`AGPL` v3.0
 
- - `GeoNetwork opensource <http://geonetwork-opensource.org>`_ v2.10: :term:`GPL` v2 
-  
+ - `GeoNetwork opensource <http://geonetwork-opensource.org>`_ v2.10: :term:`GPL` v2
+
 
 Documentation
 `````````````
@@ -62,8 +62,8 @@ The document is written in reStructuredText format for consistency and portabili
 Author Information
 ------------------
 
-This documentation was written by GeoSolutions. 
+This documentation was written by GeoSolutions.
 
-The layout for the reStructuredText based documentation is based on the work done by the `GeoServer <http://geoserver.org>`_ project and the `Sphinx <http://sphinx.pocoo.org/>`_ framework. 
+The layout for the reStructuredText based documentation is based on the work done by the `GeoServer <http://geoserver.org>`_ project and the `Sphinx <http://sphinx.pocoo.org/>`_ framework.
 
 If you have questions, found a bug or have enhancements, please contact us through info@geosolutions.it

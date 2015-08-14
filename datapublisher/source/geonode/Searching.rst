@@ -5,7 +5,7 @@
 Searching
 #########
 
-In C-READ GeoNode welcome page, click the Search button to bring up the Search page. 
+In C-READ GeoNode welcome page, click the Search button to bring up the Search page.
 
 .. image:: img/C-READ_SearchingPage.png
 
@@ -23,7 +23,4 @@ This page contains a wealth of options for customizing a search for various info
 
 .. image:: img/C-READ_Searching.png
 
-Search box available at the top of every page 
-
-
-
+Search box available at the top of every page

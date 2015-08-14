@@ -10,16 +10,37 @@ This documentation is a guide describing how to manager data and datasets.
 The main sections describe how to install and configure the basic OS packages, the system architecture and the harvesting.
 
 
-Table of contents
-=================
+C-READ Hub
+----------
 
 .. toctree::
     :maxdepth: 2
 
-    CKANdata/index.rst
-    data/index.rst
-    ProcessingNode/index.rst
-    QGIS/index.rst
+    hub/index.rst
+
+C-READ GeoNode
+--------------
+
+.. toctree::
+    :maxdepth: 2
+
+    geonode/index.rst
+
+C-READ Processing Node
+----------------------
+
+.. toctree::
+    :maxdepth: 2
+
+    processing-node/index.rst
+
+QGIS
+----
+
+.. toctree::
+    :maxdepth: 2
+
+    qgis/index.rst
 
 
 Indices and tables

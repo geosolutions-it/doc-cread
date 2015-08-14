@@ -1,12 +1,9 @@
 .. _data_index:
 
-Data
-====
-
 .. toctree::
    :maxdepth: 2
-   
-   
+
+   introduction.rst
    UserRegistration.rst
    DocumentTypes.rst
    Searching.rst
