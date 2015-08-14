@@ -11,7 +11,7 @@ The Big Picture
    :align: center
 
    GeoNode Component Architecture
-   
+
 
 
 Django Architecture
@@ -22,9 +22,9 @@ www.djangoproject.com
 MVC/MVT
 .......
 
-MVC 
+MVC
   Model, View, Controller
-MVT 
+MVT
   Model, View, Template
 
 - Model represents application data and provides rich ORM functionality.
@@ -32,7 +32,7 @@ MVT
 - In Django, the controller part of this commonly discussed, layered architecture is a
   subject of discussion. According to the standard definition, the controller is the
   layer or component through which the user interacts and model changes occur.
-    
+
 More: http://reinout.vanrees.org/weblog/2011/12/13/django-mvc-explanation.html
 
 WSGI
@@ -46,19 +46,19 @@ WSGI
   various web frameworks and an application (Apache, for example) that is 'serving'.
 - This allows any WSGI compliant framework to be hosted in any WSGI compliant server.
 - For most GeoNode development, the details of this specification may be ignored.
-    
+
 More: http://en.wikipedia.org/wiki/Wsgi
 
 
 GeoNode and GeoServer
 ---------------------
 
-GeoNode uses GeoServer for providing OGC services. 
+GeoNode uses GeoServer for providing OGC services.
 
 - GeoNode configures GeoServer via the REST API
 - GeoNode retrieves and caches spatial information from GeoServer. This includes
   relevant OGC service links, spatial metadata, and attribute information.
- 
+
   In summary, GeoServer contains the layer data, and GeoNode's layer model
   extends the metadata present in GeoServer with its own.
 - GeoNode can discover existing layers published in a GeoServer via the WMS
@@ -80,7 +80,7 @@ The latter is not suggested for production.
 
 - The database stores configuration and application information. This includes
   users, layers, maps, etc.
-- It is recommended that GeoNode be configured to use PostgresSQL/PostGIS for 
+- It is recommended that GeoNode be configured to use PostgresSQL/PostGIS for
   storing vector data as well. While serving layers directly from shapefile
   allows for adequate performance in many cases, storing features in the database
   allows for better performance especially when using complex style rules based

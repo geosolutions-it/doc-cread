@@ -1,7 +1,7 @@
 .. _installation_index:
 
-Processing Node Installation
-============================
+C-READ Processing Node: Installation
+====================================
 
 .. toctree::
    :maxdepth: 2

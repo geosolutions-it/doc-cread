@@ -13,20 +13,10 @@ Table of contents
 .. toctree::
     :maxdepth: 2
 
-    preface.rst
-    architecture/index.rst
-    maintaining/index.rst
-    harvesting/index.rst
-    processing-node-architecture/index.rst
-    processing-node-install/index.rst
-    processing-node-maintenance/index.rst
-    geonode-architecture/index.rst
-    geonode-install/index.rst
-    geonode-maps/index.rst
-    geoserver-overview/index.rst
-    geoserver-installation/index.rst
-    geoserver-datadirectory/index.rst
-
+    hub.rst
+    processing-node.rst
+    geonode.rst
+    geoserver.rst
 
 
 

@@ -1,7 +1,7 @@
 .. _maint_index:
 
-Processing Node Administration and Maintenance
-==============================================
+C-READ Processing Node: Administration and Maintenance
+======================================================
 
 .. toctree::
    :maxdepth: 2

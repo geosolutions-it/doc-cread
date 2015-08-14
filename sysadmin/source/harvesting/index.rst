@@ -1,9 +1,9 @@
 .. _harvesting_index:
 
-CKAN: Harvesting Guide
+C-READ Hub: Harvesting Guide
 ======================
 
 .. toctree::
    :maxdepth: 2
-   
+
    harvesting.rst

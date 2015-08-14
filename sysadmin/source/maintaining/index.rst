@@ -1,6 +1,5 @@
-========================
-CKAN: Maintainer's guide
-========================
+C-READ Hub: Maintainer's guide
+==============================
 
 The sections below document how to setup and maintain a CKAN site, including
 installing, upgrading and configuring CKAN and its features and extensions.
