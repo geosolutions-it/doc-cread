@@ -1,11 +1,24 @@
 .. _mainindex.rst:
 
 C-READ Project
-===================
+==============
 
 Welcome to the C-READ System Administration documentation v\ |release|.
 
 This documentation is a guide describing the system architecture and how to setup and administer the various components of the system.
+
+C-READ System
+-------------
+
+.. toctree::
+    :maxdepth: 1
+
+    architecture/overview.rst
+    architecture/presentation.rst
+    architecture/processing.rst
+    architecture/data.rst
+    architecture/recap.rst
+
 
 C-READ Hub
 ----------
