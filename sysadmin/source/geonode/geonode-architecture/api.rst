@@ -1,8 +1,8 @@
-.. _api:
+.. _geonode_api:
 
-==================
-GeoNode ah-hoc API
-==================
+===========
+GeoNode API
+===========
 
 GeoNode provides JSON API which currently support the GET method. The API are also used as main serch engine.
 
@@ -11,23 +11,23 @@ API endpoints
 
 GeoNode provides some enpoints and filtering.
 
-- *"/api/base"* query on the ResourceBase table and returns combined results of Maps, Layers Documents and Services
-- *"/api/layers"* query the Layer table
-- *"/api/maps"* query the Map table
-- *"/api/documents"* query the Document table
-- *"/api/groups"* query the GroupProfile table (which contains the Groups)
-- *"/api/profiles"* query the Profile table (which is the geonode authentication table)
-- *"/api/categories"* query the Category table
-- *"/api/keywords"* query the Tag table
-- *"/api/featured"* query the ResouceBase table by limiting the items to the ones flagged as "featured" (listed in home page)
+- ``/api/base``       query on the ResourceBase table and returns combined results of Maps, Layers Documents and Services
+- ``/api/layers``     query the Layer table
+- ``/api/maps``       query the Map table
+- ``/api/documents``  query the Document table
+- ``/api/groups``     query the GroupProfile table (which contains the Groups)
+- ``/api/profiles``   query the Profile table (which is the geonode authentication table)
+- ``/api/categories`` query the Category table
+- ``/api/keywords``   query the Tag table
+- ``/api/featured``   query the ResourceBase table by limiting the items to the ones flagged as "featured" (listed in home page)
 
 API filtering
 -------------
 
 The API allow filtering by adding django style model filters to the url.
 
-As an example, filtering by title corresponds to a url like *"/api/layers?title__contains=grid"*
-It's also possible to filter by related tables like *"/api/layers?keywords__slug__exact=the-keyword"*
+As an example, filtering by title corresponds to a url like ``/api/layers?title__contains=grid``
+It's also possible to filter by related tables like ``/api/layers?keywords__slug__exact=the-keyword``
 
 There are many possible filter, refer to the django_ filters guide.
 
@@ -40,7 +40,7 @@ API limit and pagination
 It's possible to limite the number of the results returned by the API by adding a limit parameter like *"/api/layers?limit=10"*
 It's also possible to specify an offset so that the firts results will not be returned (together with the limit this makes a pagination logic), *"/api/layers?offset=5"*
 
-So a query like *"/api/layers?offset=5&limit=10"* will return 10 results starting from the 6th found in the database.
+So a query like ``/api/layers?offset=5&limit=10`` will return 10 results starting from the 6th found in the database.
 
 API settings
 ------------
@@ -56,7 +56,7 @@ Searching with Haystack
 GeoNode is ready to use a complete full text search engine. 
 Note that haystack will be used only on the base, layers, maps and documents API.
 
-Once activated the full text API is reachable by appending "search" to the url, for example *"/api/base/search?limit=0&offset=0"*
+Once activated the full text API is reachable by appending "search" to the url, for example ``/api/base/search?limit=0&offset=0``
 
 Although the backend type is not mandatory, we suggest (for simplicity) to use Elastichsearch_:
 

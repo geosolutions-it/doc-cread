@@ -1,7 +1,7 @@
 .. _cread-main-architecture:
 
 #####################
-Architecture overview
+Architecture Overview
 #####################
 
 The C-READ system is built upon several blocks which offer different functionalities to the system.

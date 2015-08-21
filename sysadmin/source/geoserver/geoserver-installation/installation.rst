@@ -1,8 +1,8 @@
 .. _global_setup:
 
-##################
+############
 Global setup
-##################
+############
 
 The platform-independent binary is a GeoServer web application bundled inside `Jetty`_, a lightweight and portable application server.
 
@@ -39,34 +39,34 @@ installation
 
 5. Add an environment variable to save the location of GeoServer by typing the following command:
 
-.. code:: bash
+.. code-block:: bash
 
     echo "export GEOSERVER_HOME=/usr/local/geoserver" >> ~/.profile
     . ~/.profile
 
 6. Make yourself the owner of the geoserver folder. Type the following command in the terminal window, replacing USER_NAME with your own username :
 
-.. code:: bash   
+.. code-block:: bash   
 
    sudo chown -R USER_NAME /usr/local/geoserver/
 
 7. Add an environment variable to save the location of GeoServer by typing the following command:
 
-.. code:: bash
+.. code-block:: bash
 
       echo "export GEOSERVER_HOME=/usr/local/geoserver" >> ~/.profile
       . ~/.profile
 
 8. Make yourself the owner of the geoserver folder, by typing the following command:
 
-.. code:: bash
+.. code-block:: bash
 
       sudo chown -R <USERNAME> /usr/local/geoserver/
       where USER_NAME is your user name
 
 9. Start GeoServer by changing into the directory geoserver/bin and executing the startup.sh script:
 
-.. code:: bash
+.. code-block:: bash
 
      cd geoserver/bin
      sh startup.sh

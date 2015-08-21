@@ -19,6 +19,7 @@ Internet Explorer
 Versions of Microsoft Internet Explorer older than 10 exhibit known issues when used to browse a GeoNode site. As such a message is displayed warning the user that they should upgrade their browser. 
 
 .. figure:: img/ie_message.png
+   :width: 640
 
 Testing on Internet Explorer
 ============================
@@ -28,6 +29,7 @@ When working on front end code, developers should take care to test carefully wi
 In order to test on Internet Explorer, developers can use the `Modern IE <https://www.modern.ie/en-us>`_ site to download virutal machines for use in `Oracle VM Virtual Box <https://www.virtualbox.org/>`_. 
 
 .. figure:: img/modern_ie.png
+   :width: 640
 
 Once the VM is downloaded, follow the instructions to configure it in your VirtualBox setup.
 

@@ -93,7 +93,7 @@ the dataset search page:
 The datasets are sorted by their number of recent views.
 
 You can retrieve datasets most-popular-first from the
-:doc:`CKAN API </api/index>` by passing ``'sort': 'views_recent desc'`` to the
+CKAN API by passing ``'sort': 'views_recent desc'`` to the
 ``package_search()`` action. This could be used, for example, by a custom
 template to show a list of the most popular datasets on the site's front page.
 

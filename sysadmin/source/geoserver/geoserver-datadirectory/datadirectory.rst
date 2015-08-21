@@ -14,7 +14,7 @@ The easiest way to create a new data directory is to copy one that comes with a 
 If GeoServer is running in Standalone mode the data directory is located at <installation root>/data_dir.
 If GeoServer is running as Web Archive mode inside of a servlet container, the data directory is located at <web application root>/data. In a linux enviroment an example location is:
 
-.. code:: bash
+.. code-block:: bash
 
    /var/lib/tomcat7/webapps/geoserver/data
 
@@ -23,7 +23,7 @@ Setting the Data Directory
 ==========================
 On Linux platforms the location of the GeoServer data directory is controlled by the GEOSERVER_DATA_DIR environment variable. Setting the variable can be achieved with the following command (in a bash shell):
 
-.. code:: bash
+.. code-block:: bash
 
          % export GEOSERVER_DATA_DIR=/var/lib/geoserver_data
 
@@ -36,9 +36,7 @@ Structure of the Data Directory
 This section gives an overview of the structure and contents of the GeoServer data directory.
 The directories that do contain user-modifiable content are: **logs**, **palettes**, **templates**, **user-projection**, and **www**.
 
-The following figure shows the structure of the GeoServer data directory:
-
-.. code::
+The following figure shows the structure of the GeoServer data directory::
  
     <data_directory>/
 
@@ -68,6 +66,7 @@ The following figure shows the structure of the GeoServer data directory:
               |
               +- layer dirs...
       www/
+      
 
 The .xml files
 --------------
@@ -96,7 +95,7 @@ The data directory can be used to store file-based geospatial datasets being ser
 
 The main benefit of storing data files under the data directory is portability. Consider a shapefile stored external to the data directory at a location C:\gis_data\foo.shp. The datastore entry in catalog.xml for this shapefile would look like the following:
 
-.. code:: xml
+.. code-block:: xml
 
     <datastore id="foo_shapefile">
        <connectionParams>
@@ -107,11 +106,11 @@ The main benefit of storing data files under the data directory is portability. 
 Now consider trying to port this data directory to another host running GeoServer. The location `C:\gis_data\foo.shp` probably does not exist on the second host. So either the file must be copied to this location on the new host, or catalog.xml must be changed to reflect a new location.
 This problem can be avoided by storing foo.shp in the data directory. In this case the datastore entry in catalog.xml becomes:
 
-.. code:: xml
+.. code-block:: xml
 
     <datastore id="foo_shapefile">
       <connectionParams>
-	<parameter name="url" value="file:data/foo.shp"/>
+         <parameter name="url" value="file:data/foo.shp"/>
       </connectionParams>
     </datastore>
 
@@ -157,7 +156,7 @@ styles
 
 The styles directory contains Styled Layer Descriptor (SLD) files which contain styling information used by the GeoServer WMS. For each file in this directory there is a corresponding entry in catalog.xml:
 
-.. code:: xml
+.. code-block:: xml
 
     <style id="point_style" file="default_point.sld"/>
 

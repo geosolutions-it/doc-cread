@@ -1,13 +1,26 @@
-.. _install:
+.. _geonode_installation_index:
 
-==================================
-C-READ Geonode: Installation Guide
-==================================
+===========================
+GeoNode: Installation Guide
+===========================
 
-This section will guide the user through the steps necessary to install GeoNode. Basically there are three different ways for you to install GeoNode. Depending on your purpose, you can choose between those. If you just want to test Geonode or just want a completely configured GeoNode, then try the :ref:`quick_installation`. If you intend to use Geonode with some already installed components, then use the :ref:`custom_install` guide. This installation will give you full control over the components and you will be able to configure the components the way you need them. If you instead want to do some development, use the :ref:`install_devmode` guide.
+This section will guide the user through the steps necessary to install GeoNode. 
 
-:ref:`quick_installation`
-  How to install GeoNode on Linux, OSX and Windows.
+Packaging for automatic installation are only provided for Ubuntu, so, 
+the only option for installing GeoNode on a CentOS platform is installing it from source.
 
-:ref:`custom_install`
-  How to install GeoNode manually.
+.. toctree::
+   :maxdepth: 2
+   
+   setup_vm.rst
+   setup_centos.rst
+   install_base_tomcat
+   install_base_httpd
+   install_base_postgresql
+
+   install_geonode_db   
+   install_geonode
+   install_geoserver   
+   install_geonode_httpd
+   
+   old/index

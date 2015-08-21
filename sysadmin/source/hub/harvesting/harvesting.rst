@@ -13,12 +13,12 @@ You have to type the address for the harvesting page, since there is no direct l
    http://YOUR_SITE/harvest
 
 
-.. figure:: ../images/harvest_add.png
+.. figure:: images/harvest_add.png
    :align: center
 
 Press the "Add Harvest Source" button and this page will open:
 
-.. figure:: ../images/harvest_edit.png
+.. figure:: images/harvest_edit.png
    :align: center
 
 In order to add properly a CSW source you'll have to set:

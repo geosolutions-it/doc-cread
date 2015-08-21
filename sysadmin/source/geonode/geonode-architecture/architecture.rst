@@ -8,6 +8,7 @@ The Big Picture
 ---------------
 
 .. figure:: img/geonode_component_architecture.png
+   :width: 640
    :align: center
 
    GeoNode Component Architecture
@@ -74,7 +75,7 @@ More:  http://geoserver.org
 GeoNode and PostgreSQL/PostGIS
 ------------------------------
 
-In production, GeoNode is configured to use PostgreSQL/PostGIS for it's persistent
+In production, GeoNode is configured to use PostgreSQL/PostGIS for its persistent
 store. In development and testing mode, often an embedded sqlite database is used.
 The latter is not suggested for production.
 

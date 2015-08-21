@@ -1,7 +1,8 @@
 .. _cread-arch-recap:
 
-Final notes
-===========
+================================
+Architecture overview (detailed)
+================================
 
 Here is a diagram showing the building blocks with their respective implementing applications.
 

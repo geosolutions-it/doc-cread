@@ -1,38 +1,21 @@
 .. _main_index:
-========================
-C-READ Geonode: Overview
-========================
+
+=================
+Geonode: Overview
+=================
 
 In this section, will found information about each and every component of Geonode, for example geoserver, geonode settings, security.
 
-:ref:`architecture`
+.. toctree::    
+    :maxdepth: 2
 
-:ref:`components`
-
-:ref:`security`
-
-:ref:`api`
-
-:ref:`localization`
-
-:ref:`djangoapps`
-
-:ref:`javascript`
-
-:ref:`settings`
-
-:ref:`browsers`
-
-.. toctree::
-    :hidden:
-    :maxdepth: 3
-
+    components_overview
     architecture
     components
     security
+    security_cread
     api
     localization
-    settings
     browsers
     developers/index
     developers/django-apps

@@ -4,6 +4,11 @@
 Security and Permissions
 ========================
 
+ .. note::
+ 
+   This section is related to GeoNode standard security behaviour.
+   C-READ customizes a bit this behaviour: the differences are documented in :ref:`cread_security`.   
+
 GeoNode has the ability to restrict the access on your layers, maps, and 
 documents to other users or group of users.
 
@@ -109,7 +114,7 @@ other users from the layer itself.
 Generally there are the following types of permissions:
 
 .. figure:: img/permissions.png
-
+      
 These are permissions that is possible to assign to a GeoNode layer:
 
 * Who can view the layer
@@ -138,38 +143,11 @@ layer permissions and an edit button that will display links to:
 This can also be seen here:
 
 .. figure:: img/permissions2.png
+   :width: 640
 
 If the layer is vectorial the user will be able also to edit the layer's
 features in a GeoNode map (the "Edit" tool should be enabled).
   
-Now take a closer look on to the section *Edit Metadata*. All the following things can be edited in the metadata section:
-
-* Owner
-* Title
-* Date
-* Data type
-* Edition
-* Abstract
-* Purpose
-* Maintenance frequency
-* Keywords region
-* Restrictions
-* Restrictions other
-* Language
-* Category
-* Spatial representation type
-* Temporal extent start
-* Temporal extent end
-* Supplemental information
-* Distribution URL
-* Distribution description
-* Data quality statement
-* Keywords
-* Point of contact
-* Metadata author
-* Attributes (those can though not be changed!)
-
-  .. todo:: this should go to a metadata session
 
 Maps
 ----
@@ -197,10 +175,11 @@ The same permissions that can be used on layers can be used on the documents, wi
 Require authentication to access GeoNode
 ----------------------------------------
 
-By default, unregistered users cannot view maps, layers, and documents on your site without being authenticated.  GeoNode comes
-a security option that requires users to authenticate before accessing any page.  To enable this option, set the ``LOCKDOWN_GEONODE``
-setting to true in your ``settings.py`` file.  You can fine-tune which url routes are white-listed (accessible by unregistered
-users) by listing the routes in the ``AUTH_EXEMPT_URLS`` tuple.  See the :ref:`djangoapps` documentation for more information.
+By default, unregistered users can view maps, layers, and documents on your site without being authenticated.  
+GeoNode allow to switch on a security option that requires users to authenticate before accessing any page.
+To enable this option, set the ``LOCKDOWN_GEONODE`` setting to true in your ``settings.py`` file.  
+You can fine-tune which url routes are white-listed (accessible by unregistered users) 
+by listing the routes in the ``AUTH_EXEMPT_URLS`` tuple.  See the :ref:`djangoapps` documentation for more information.
 
 Publishing and unpublishing objects
 ===================================

@@ -20,19 +20,21 @@ C-READ System
     architecture/recap.rst
 
 
-C-READ Hub
-----------
-
+C-READ Hub: CKAN
+----------------
+    
 .. toctree::
     :maxdepth: 1
 
     hub/architecture/index.rst
+    hub/install/index.rst
     hub/maintaining/index.rst
+    hub/extensions/index.rst
     hub/harvesting/index.rst
 
 
-C-READ GeoNode
---------------
+C-READ Data: GeoNode
+--------------------
 
 .. toctree::
     :maxdepth: 1
@@ -60,6 +62,15 @@ GeoServer
     geoserver/geoserver-overview/index.rst
     geoserver/geoserver-installation/index.rst
     geoserver/geoserver-datadirectory/index.rst
+
+Overviews recap
+===============
+
+- :ref:`cread-main-architecture`
+- :ref:`cread-arch-recap`
+- :ref:`hub-components-overview`
+- :ref:`geonode-components-overview`
+
 
 Indices and tables
 ==================

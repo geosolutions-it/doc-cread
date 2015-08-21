@@ -102,6 +102,42 @@ Edit Advanced Metadata page
 
 
 
+
+
+TODO:
+
+Now take a closer look on to the section *Edit Metadata*. All the following things can be edited in the metadata section:
+
+* Owner
+* Title
+* Date
+* Data type
+* Edition
+* Abstract
+* Purpose
+* Maintenance frequency
+* Keywords region
+* Restrictions
+* Restrictions other
+* Language
+* Category
+* Spatial representation type
+* Temporal extent start
+* Temporal extent end
+* Supplemental information
+* Distribution URL
+* Distribution description
+* Data quality statement
+* Keywords
+* Point of contact
+* Metadata author
+* Attributes (those can though not be changed!)
+
+  .. todo:: this should go to a metadata session
+
+
+
+
 ==========
 Edit style
 ==========

@@ -1,8 +1,8 @@
 .. _resources_index:
 
-====================================
-C-READ Geonode: Resources Publishing
-====================================
+=============================
+Geonode: Publishing Resources
+=============================
 
 .. toctree::
    :maxdepth: 2

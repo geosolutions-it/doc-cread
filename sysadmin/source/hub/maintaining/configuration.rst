@@ -45,11 +45,11 @@ CKAN configuration options are generally defined before starting the web applica
 `configuration file <CKAN configuration file>`_ or via `Environment variables`_).
 
 A limited number of configuration options can also be edited during runtime. This can be done on the
-:ref:`administration interface <admin page>` or using the :py:func:`~ckan.logic.action.update.config_option_update`
-API action. Only :doc:`sysadmins </sysadmin-guide>` can edit these runtime-editable configuration options. Changes made to these configuration options will be stored on the database and persisted when the server is restarted.
+*administration interface* or using the :py:func:`~ckan.logic.action.update.config_option_update`
+API action. Only sysadmins can edit these runtime-editable configuration options. Changes made to these configuration options will be stored on the database and persisted when the server is restarted.
 
 Extensions can add (or remove) configuration options to the ones that can be edited at runtime. For more
-details on how to this check :doc:`/extensions/remote-config-update`.
+details on how to this check :doc:`../extensions/guide/remote-config-update`.
 
 
 
@@ -185,21 +185,21 @@ Example::
  ckan.datastore.write_url = postgresql://ckanuser:pass@localhost/datastore
 
 The database connection to use for writing to the datastore (this can be
-ignored if you're not using the :doc:`datastore`). Note that the database used
+ignored if you're not using the :doc:`../extensions/datastore`). Note that the database used
 should not be the same as the normal CKAN database. The format is the same as
 in :ref:`sqlalchemy.url`.
 
 .. _ckan.datastore.read_url:
 
 ckan.datastore.read_url
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Example::
 
  ckan.datastore.read_url = postgresql://readonlyuser:pass@localhost/datastore
 
 The database connection to use for reading from the datastore (this can be
-ignored if you're not using the :doc:`datastore`). The database used must be
+ignored if you're not using the :doc:`../extensions/datastore`). The database used must be
 the same used in :ref:`ckan.datastore.write_url`, but the user should be one
 with read permissions only. The format is the same as in :ref:`sqlalchemy.url`.
 
@@ -233,7 +233,7 @@ Example::
 
 Default value: ``english``
 
-This can be ignored if you're not using the :doc:`datastore`.
+This can be ignored if you're not using the :doc:`../extensions/datastore`.
 
 The default language used when creating full-text search indexes and querying
 them. It can be overwritten by the user by passing the "lang" parameter to
@@ -250,7 +250,7 @@ Example::
 
 Default value:  ``gist``
 
-This can be ignored if you're not using the :doc:`datastore`.
+This can be ignored if you're not using the :doc:`../extensions/datastore`.
 
 The default method used when creating full-text search indexes. Currently it
 can be "gin" or "gist". Refer to PostgreSQL's documentation to understand the
@@ -708,7 +708,9 @@ Specify which CKAN plugins are to be enabled.
 
 .. warning::  If you specify a plugin but have not installed the code,  CKAN will not start.
 
-Format as a space-separated list of the plugin names. The plugin name is the key in the ``[ckan.plugins]`` section of the extension's ``setup.py``. For more information on plugins and extensions, see :doc:`/extensions/index`.
+Format as a space-separated list of the plugin names. 
+The plugin name is the key in the ``[ckan.plugins]`` section of the extension's ``setup.py``. 
+For more information on plugins and extensions, see :doc:`..//extensions/index`.
 
 .. note::
 
@@ -877,8 +879,10 @@ Format tips:
 
 * the format is Markdown
 
-.. note:: Whilst the default text is translated into many languages (switchable in the page footer), the text in this configuration option will not be translatable.
-          For this reason, it's better to overload the snippet in ``home/snippets/about_text.html``. For more information, see :doc:`/theming/index`.
+.. note:: Whilst the default text is translated into many languages (switchable in the page footer), 
+          the text in this configuration option will not be translatable.
+          For this reason, it's better to overload the snippet in ``home/snippets/about_text.html``. 
+          For more information, see the theming documentation.
 
 .. _ckan.main_css:
 
@@ -991,7 +995,7 @@ web interface. ``dumps_format`` is just a string for display. Example::
 .. _ckan.recaptcha.version:
 
 ckan.recaptcha.version
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 The version of Recaptcha to use, for example::
 
@@ -1044,7 +1048,7 @@ datasets are displayed).
 .. _ckan.featured_organizations:
 
 ckan.featured_orgs
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 Example::
 
@@ -1134,7 +1138,7 @@ JSON based resource formats that will be rendered by the Text view plugin (``tex
 .. _ckan.preview.xml_formats:
 
 ckan.preview.xml_formats
-^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Example::
 
@@ -1231,7 +1235,7 @@ Example::
 
 To customise the display of CKAN you can supply replacements for the Genshi template files. Use this option to specify where CKAN should look for additional templates, before reverting to the ``ckan/templates`` folder. You can supply more than one folder, separating the paths with a comma (,).
 
-For more information on theming, see :doc:`/theming/index`.
+For more information, see the theming documentation.
 
 .. _extra_public_paths:
 
@@ -1244,7 +1248,7 @@ Example::
 
 To customise the display of CKAN you can supply replacements for static files such as HTML, CSS, script and PNG files. Use this option to specify where CKAN should look for additional files, before reverting to the ``ckan/public`` folder. You can supply more than one folder, separating the paths with a comma (,).
 
-For more information on theming, see :doc:`/theming/index`.
+For more information, see the theming documentation.
 
 .. end_config-theming
 
@@ -1278,7 +1282,7 @@ The maximum in megabytes a resources upload can be.
 .. _ckan.max_image_size:
 
 ckan.max_image_size
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 Example::
     ckan.max_image_size = 10
@@ -1350,7 +1354,7 @@ Example::
   ckan.datapusher.url = http://127.0.0.1:8800/
 
 DataPusher endpoint to use when enabling the ``datapusher`` extension. If you
-installed CKAN via :doc:`/maintaining/installing/install-from-package`, the DataPusher was installed for you
+installed CKAN via package, the DataPusher was installed for you
 running on port 8800. If you want to manually install the DataPusher, follow
 the installation `instructions <http://docs.ckan.org/projects/datapusher>`_.
 
@@ -1502,7 +1506,10 @@ Example::
 
 Default value:  ``en`` (English)
 
-Use this to specify the locale (language of the text) displayed in the CKAN Web UI. This requires a suitable `mo` file installed for the locale in the ckan/i18n. For more information on internationalization, see :doc:`/contributing/i18n`. If you don't specify a default locale, then it will default to the first locale offered, which is by default English (alter that with `ckan.locales_offered` and `ckan.locales_filtered_out`.
+Use this to specify the locale (language of the text) displayed in the CKAN Web UI. 
+This requires a suitable `mo` file installed for the locale in the ckan/i18n. 
+For more information on internationalization, see the related doc. 
+If you don't specify a default locale, then it will default to the first locale offered, which is by default English (alter that with `ckan.locales_offered` and `ckan.locales_filtered_out`.
 
 .. note: In versions of CKAN before 1.5, the settings used for this was variously `lang` or `ckan.locale`, which have now been deprecated in favour of `ckan.locale_default`.
 

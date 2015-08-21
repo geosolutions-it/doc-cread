@@ -1,11 +1,11 @@
 .. _setup_centos.rst
 
-CentOS 7 Installation
-=====================
+Installing basic packages
+=========================
 
 We are re going to install a minimal CentOS 7 distribution. You can get a copy
 of the .iso the image used for the installation `here
-<http://mi.mirror.garr.it/mirrors/CentOS/6.5/isos/x86_64/CentOS-6.5-x86_64-minimal.iso>`_.
+<http://mi.mirror.garr.it/mirrors/CentOS/7/isos/x86_64/CentOS-7-x86_64-Minimal-1503-01.iso>`_.
 
 Installing the Operating System
 -------------------------------
@@ -15,16 +15,19 @@ Boot up the installation DVD and start the `CentOS 7` Installation wizard.
     - Under `Select Date & Time` an set appropriate Date and Time settings
     - Under `Keyboard` and choose the keyboard layout
     - Under `Installation Destination` select the hard disk where CentOS will
-      be installed. Create a custom partitioning scheme as follows:
-    +-----------------+----------------+--------+-------------+
-    | Partition Label | Partition Type | Size   | Mount Point |
-    +=================+================+========+=============+
-    | boot            | ext3           | 700 MB | /boot       |
-    +-----------------+----------------+--------+-------------+
-    | root            | ext4           | 35 GB  | /           |
-    +-----------------+----------------+--------+-------------+
-    | swap            | swap           | 4 GB   |             |
-    +-----------------+----------------+--------+-------------+
+      be installed. 
+      
+      Create a custom partitioning scheme as follows:
+      
+      +-----------------+----------------+-----------+-------------+
+      | Partition Label | Partition Type | Size      | Mount Point |
+      +=================+================+===========+=============+
+      | boot            | ext3           |   700 MB  | /boot       |
+      +-----------------+----------------+-----------+-------------+
+      | root            | ext4           |    35 GB  | /           |
+      +-----------------+----------------+-----------+-------------+
+      | swap            | swap           |     4 GB  |             |
+      +-----------------+----------------+-----------+-------------+
     - Under `Networking` configure your network interface according to your infrastructure
       you can either set it to `DHCP` to automatically get all the settings from
       a local DHCP server or configure it by hand.
@@ -49,8 +52,8 @@ Allow SSH connections through the firewall
 ''''''''''''''''''''''''''''''''''''''''''
 
 On CentOS 7 the firewall is enabled by default. To allow SSH clients to connect
-to the machine allow incoming connections on port 22:
-::
+to the machine allow incoming connections on port 22::
+
     firewall-cmd --zone=public --add-port=22/tcp --permanent
     firewall-cmd --zone=public --add-service=ssh --permanent
     firewall-cmd --reload
@@ -62,31 +65,32 @@ Disable SSH login for the `root` user
     `geosolutions` user account and you have the privileges to run `sudo su` to
     switch to the `root` user account.
 
-Edit file `/etc/ssh/sshd_config` to disable `root` login via SSH:
-::
+Edit file `/etc/ssh/sshd_config` to disable `root` login via SSH::
+
     PermitRootLogin no
 
 Public key authentication
 '''''''''''''''''''''''''
+
 `Public key authentication`_. is generally consider a safer way to authenticate
 users for SSH access. Let's set it up and disable password based authentication
 
 .. _a link: https://en.wikipedia.org/wiki/Public-key_cryptography
 
-First generate a public/private key pair using `ssh-keygen`:
-::
+First generate a public/private key pair using `ssh-keygen`::
+
     ssh-keygen
 
 Folllow the procedure, you will end up with your newly generated key under `~/.ssh`
 Now copy your `public` (by default it is called id_rsa.pub) key over the CentOS
 machine in `/home/geosolutions/.ssh/authorized_keys`. There are several ways to do
-it, we are going to use the `ssh-copy-id` tool:
-::
+it, we are going to use the `ssh-copy-id` tool::
+
         ssh-copy-id -i ~/.ssh/id_rsa.pub geosolutions@<server-ip-address>
 
 You should now be able to login via SSH as `geosolutions` without been asked for
-the password:
-::
+the password::
+
 
     ssh geosolutions@<server-ip-address>
 
@@ -96,8 +100,8 @@ You can now disable password based login over SSH
     Before disabling password authentication make sure you' ve installed your
     public key on the server and you are able to login without password
 
-Edit `/etc/ssh/sshd_config` as follows:
-::
+Edit `/etc/ssh/sshd_config` as follows::
+
     ...
     RSAAuthentication yes
     ...
@@ -111,16 +115,16 @@ Edit `/etc/ssh/sshd_config` as follows:
 FTP Server
 ----------
 
-In this section we are going to install `vsftpd` FTP server. As superuser, run:
-::
+In this section we are going to install `vsftpd` FTP server. As superuser, run::
+
     yum install vsftpd
 
 Configuration
 '''''''''''''
 
 Now edit the configuration file located at `/etc/vsftpd/vsftpd.conf` and set the
-following options:
-::
+following options::
+
     anonymous_enable=NO
     local_enable=YES
     write_enable=YES
@@ -138,24 +142,24 @@ following options:
     tcp_wrappers=YES
 
 With this configuration only the users listed in `/etc/vsftpd/user` are allowed to
-connect via FTP, edit the file:
-::
+connect via FTP, edit the file::
+
     vim /etc/vsftpd/user_list_allowed
 
-and add `geosolutions` user
-::
+and add `geosolutions` user::
+
     geosolutions
 
 Manage `vsftpd`
 '''''''''''''''
 
-You can start and stop vsftpd as follows:
-::
+You can start and stop vsftpd as follows::
+
     systemctl start vsftpd
     systemctl stop vsftpd
 
-Enable vsftpd if you want to automatically start at boot time:
-::
+Enable vsftpd if you want to automatically start at boot time::
+
     systemctl enable vsftpd
 
 Log rotation
@@ -165,8 +169,8 @@ Over time, log file can grow pretty large. To avoid having the filesystem filled
 with log files we are going to use `Logrotate` to periodically truncate and/or
 compress them.
 
-Edit the logrotate configuration file for vsftpd under `/etc/logrotate.d/vsftpd` as follows:
-::
+Edit the logrotate configuration file for vsftpd under `/etc/logrotate.d/vsftpd` as follows::
+
     /var/log/vsftpd.log {
         # ftpd doesn't handle SIGHUP properly
         daily
@@ -188,7 +192,7 @@ Edit the logrotate configuration file for vsftpd under `/etc/logrotate.d/vsftpd`
     }
 
 Then add an entry in the `crontab` to run logrotate periodically:
-run `crontab -e` and add this line at the bottom
-::
+run `crontab -e` and add this line at the bottom::
+
     ...
     0 * * * * /usr/sbin/logrotate /etc/logrotate.d/vsftpd

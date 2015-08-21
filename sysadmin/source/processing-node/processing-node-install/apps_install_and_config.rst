@@ -8,29 +8,29 @@ Tomcat Installation
 '''''''''''''''''''
 
 We are going to run `Jenkins` as a `Tomcat` instance. Let's download and
-install `Tomcat` first
-::
+install `Tomcat` first::
+
     wget http://it.apache.contactlab.it/tomcat/tomcat-7/v7.0.63/bin/apache-tomcat-7.0.63.tar.gz
     tar xvf /apache-tomcat-7.0.63.tar.gz
     mv apache-tomcat-7.0.63 /opt
     ln -s /opt/apache-tomcat-7.0.63 /opt/tomcat
 
-Then prepare a clean instance called `base` to be used as a template for all tomcat
-instances
-::
+Then prepare a clean instance called `base` to be used as a template for all tomcat instances::
+
     mkdir -p /var/lib/tomcat/base/{bin,conf,logs,temp,webapps,work}\
     cp -r /opt/tomcat/conf/* /var/lib/tomcat/base/conf/*
 
-And fix the permissions on the files
-::
+And fix the permissions on the files::
+
     chown -R tomcat:tomcate /opt/apache*
     chown -R tomcat:tomcat /var/lib/tomcat
 
 Instance manager script
 '''''''''''''''''''''''
+
 To manage our Tomcat instances create the file /etc/systemd/system/tomcat\@.service
-with the following content:
-::
+with the following content::
+
     [Unit]
     Description=Tomcat %I
     After=network.target
@@ -56,41 +56,41 @@ with the following content:
 Jenkins Installation
 ''''''''''''''''''''
 
-Prepare a new instance of Tomcat for Jenkins
-::
+Prepare a new instance of Tomcat for Jenkins::
+
     mkdir -p /var/lib/tomcat/jenkins
     cp -r /var/lib/tomcat/base/* /var/lib/tomcat/jenkins/*
     chown -R tomcat:tomcat /var/lib/tomcat
 
-Then download and deploy the latest LTS ( at the time of writing 1.609.2) war for Jenkins
-::
+Then download and deploy the latest LTS ( at the time of writing 1.609.2) war for Jenkins::
+
     wget http://mirrors.jenkins-ci.org/war-stable/latest/jenkins.war
     chown tomcat:tomcat ./jenkins.war
     mv jenkins.war /var/lib/tomcat/jenkins/webapps/
 
 .. _jenkins-auto-startup:
 
-Now enable automatic startup creating this symlink:
-::
+Now enable automatic startup creating this symlink::
+
     ln-s /etc/systemd/system/tomcat\@.service /usr/lib/systemd/system/multi-user.target.wants/tomcat@jenkins.service
 
 Basic installation is finished. We can now start Jenkins. By default Jenkins will
 listen to requests on port 8080. To test the installation temporarily open port
-8080 in the firewall
-::
+8080 in the firewall::
+
     firewall-cmd --zone=public --add-port=8080/tcp
     firewall-cmd --zone=public --add-service=http
     firewall-cmd --reload
 
-Start Jenkins
-::
+Start Jenkins::
+
     systemctl start tomcat@jenkins
 
 You should be able to access Jenkins via HTTP on port 8080. Open http://<server-ip-or-hostname>:8080/jenkins
 with your favourite browser.
 
-To stop Jenkins, run
-::
+To stop Jenkins, run::
+
     systemctl stop tomcat@jenkins
 
 Jenkins basic configuration
@@ -122,8 +122,8 @@ in files to trigger build jobs. `Git` is a popular `VCS` and by installing Git, 
 will be able (after installing Jenkins plugins) to access `Git repositories` either
 local or hosted ones like `Github` repositories.
 
-In the terminal type the following to install Git:
-::
+In the terminal type the following to install Git::
+
     yum install git
 
 Install Jenkins Plugins
@@ -144,8 +144,8 @@ To avoid having the filesystem filled up with log files we are going to use
 `Logrotate` to periodically truncate and/or compress Jenkins log files.
 
 Edit the logrotate configuration file for vsftpd under `/etc/logrotate.d/jenkins`
-as follows:
-::
+as follows::
+
     /var/lib/tomcat/jenkins/logs/catalina.out {
             daily
             missingok
@@ -156,8 +156,8 @@ as follows:
             create 644 tomcat tomcat
     }
 
-Then add the following line to the crontab
-::
+Then add the following line to the crontab::
+
     crontab -e
     …
     0 * * * * /usr/sbin/logrotate /etc/logrotate.d/jenkins
@@ -171,15 +171,15 @@ Install Apache 2.4.6
 ::
     yum install httpd
 
-And additional modules
-::
+And additional modules::
+
     yum install httpd mod_ssl mod_proxy_html
 
 Firewall configuration
 ''''''''''''''''''''''
 
-Allow requests on port 80 through the firewall
-::
+Allow requests on port 80 through the firewall::
+
     firewall-cmd --zone=public --add-port=80/tcp --permanent
     firewall-cmd --zone=public --add-service=http --permanent
     firewall-cmd --reload
@@ -190,8 +190,8 @@ Apache Configuration
 We' re going to use Apache as a reverse proxy. All incoming requests on port 80
 will be processed by Apache routed to Jenkins on port 8080
 
-Create /etc/httpd/conf.d/reverse-proxy.conf with the following content to setup the reverse proxy:
-::
+Create /etc/httpd/conf.d/reverse-proxy.conf with the following content to setup the reverse proxy::
+
     <VirtualHost *:80>
 
         ProxyRequests Off
@@ -214,21 +214,21 @@ Create /etc/httpd/conf.d/reverse-proxy.conf with the following content to setup 
 Apache start and stop
 '''''''''''''''''''''
 
-To start and stop Apache, run:
-::
+To start and stop Apache, run::
+
     systemctl start httpd
     systemctl stop httpd
 
-To automatically start Apache at boot, run
-::
+To automatically start Apache at boot, run::
+
     systemctl enable httpd
 
 Log Rotation
 ''''''''''''
 
 Edit the configuration file for logrotate to rotate Apache log files
-( /etc/logrotate.d/httpd ) as follows:
-::
+( /etc/logrotate.d/httpd ) as follows::
+
     /var/log/httpd/*log {
         daily
         maxsize 100M
@@ -244,28 +244,28 @@ Edit the configuration file for logrotate to rotate Apache log files
         endscript
     }
 
-And add the following line to the ctontab:
-::
+And add the following line to the crontab::
+
     crontab -e
-    …
+    
     0 * * * * /usr/sbin/logrotate /etc/logrotate.d/httpd
-    …
+    
 
 GDAL
 ----
 
 We' re going to use `GDAL <http://gdal.org/>`_ to process geospatial data. To install
-it, first add the EPEL 7.5 repository
-::
+it, first add the EPEL 7.5 repository::
+
     wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
     rpm -ivh epel-release-7-5.noarch.rpm
     yum clean all
     yum check-update
 
-Then install GDAL
-::
+Then install GDAL::
+
     yum install gdal
 
-And GDAL's python bindings
-::
+And GDAL's python bindings::
+
     yum install numpy scipy python-matplotlib ipython python-pandas sympy python-nose
