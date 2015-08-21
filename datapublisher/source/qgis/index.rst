@@ -9,5 +9,5 @@
    InstallingAWorkFlow.rst
    RunningAWorkFlow.rst
    WorkflowsUseCases.rst
-   WorkflowsUseCases_Raster.rst
    WorkflowsUseCases_Vector.rst
+   WorkflowsUseCases_Raster.rst
