@@ -1,10 +1,13 @@
 .. _QGIS_index:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Overview.rst
    InstallingQGIS.rst
    InstallingWorkFlowPlugIn.rst
    InstallingAWorkFlow.rst
    RunningAWorkFlow.rst
+   WorkflowsUseCases.rst
+   WorkflowsUseCases_Raster.rst
+   WorkflowsUseCases_Vector.rst
