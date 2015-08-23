@@ -1,9 +1,8 @@
-.. _QGIS:
+.. _vector-workflows:
 
-
-########
+########################################
 Vector process and publishing workflow
-########
+########################################
 
 Overview
 ---------

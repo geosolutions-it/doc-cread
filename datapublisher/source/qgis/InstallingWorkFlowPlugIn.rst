@@ -1,9 +1,9 @@
-.. _QGIS:
+.. _installing-workflow-plugin:
 
 
-##########################
+########
 Installing workflow plugin
-##########################
+########
 
 Processing Workflows is a plugin for QGIS for creating processing workflows. The workflows provide step-by-step instructions and guidance for less experienced users thus facilitating capacity building in Earth observation data analysis and GIS tasks.
 
