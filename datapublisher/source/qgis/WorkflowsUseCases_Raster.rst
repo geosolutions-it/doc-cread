@@ -1,9 +1,8 @@
-.. _QGIS:
+.. _raster-workflows:
 
-
-########
+########################################
 Raster process and publishing workflows
-########
+########################################
 
 Overview
 ---------
