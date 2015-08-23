@@ -511,6 +511,8 @@ Init the db for the harvester services::
 
    paster --plugin=ckanext-harvest harvester initdb --config=/etc/ckan/default/production.ini
 
+.. _install_ckan_harvesting_script:
+
 Script harvesting
 -----------------
 
@@ -529,6 +531,13 @@ Create the file ``/usr/lib/ckan/run_harvester.sh`` and add the following lines::
 and make it executable::
 
    chmod +x /usr/lib/ckan/run_harvester.sh
+   
+.. important::
+   The "official" script would only require the line with ``harvester run``.
+   The line  containing the ``harvester job-all`` is an additional command that will force harvesting from
+   all the configured sources.
+
+   See :ref:`ckan_harvesting_running` for further details.  
 
 Periodic harvesting
 -------------------

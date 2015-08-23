@@ -1,3 +1,5 @@
+.. _ckan_cli_paster:
+
 ======================
 Command Line Interface
 ======================

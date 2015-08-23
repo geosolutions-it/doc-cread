@@ -1,13 +1,14 @@
 .. _harvesting_index:
 
-C-READ Hub: Harvesting Guide
-============================
+Harvesting setup
+================
 
 .. toctree::
    :maxdepth: 2
 
-   harvesting.rst
+   harvesting
    harvest_cread
    harvest_ccccc
    harvest_csw
+   running
    
