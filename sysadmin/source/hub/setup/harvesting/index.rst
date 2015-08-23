@@ -7,3 +7,7 @@ C-READ Hub: Harvesting Guide
    :maxdepth: 2
 
    harvesting.rst
+   harvest_cread
+   harvest_ccccc
+   harvest_csw
+   

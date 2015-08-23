@@ -12,6 +12,7 @@ The CKAN hub will gather informations from different sources.
 Among these, we have the main data node based on GeoNode, and the  
 CCCCCC ClearingHouse.
 
+.. _install_ext_harvesters_geonode:
 
 =================
 GeoNode harvester
@@ -52,6 +53,8 @@ To enable it, edit file ``/etc/ckan/default/production.ini`` and add the plugin:
 Then restart CKAN to make it load this new extension.  
 
 
+.. _install_ext_harvesters_ccccc:
+
 =============================
 CCCCC ClearingHouse harvester
 =============================
@@ -91,5 +94,44 @@ To enable it, edit file ``/etc/ckan/default/production.ini`` and add the plugin:
 Then restart CKAN to make it load this new extension.  
 
 
+.. _install_ext_harvesters_geonetwork:
+
+====================
+GeoNetwork harvester
+====================
+
+Introduction
+------------
+
+GeoNetwork is an opensource metadata catalog which provides `CSW <http://www.opengeospatial.org/standards/cat>`_ services.
+It was used in older GeoNode versions as the backend for receiving CSW requests.
+
+GeoNetwork may be queried and harvested using the official CSW harvester provides with the 
+`ckanext-spatial <https://github.com/ckan/ckanext-spatial>`_ extension, anyway some more functionalities can be 
+added using the Geonetwork own API, such as mapping GeoNetwork categories onto CKAN groups.
+
+The `GeoNetwork harvester <https://github.com/geosolutions-it/ckanext-geonetwork>`_ provides such extended functionalities.
+
+
+Installing the GeoNetowrk harvester plugin
+------------------------------------------
+
+Before using the plugin, the extension must be installed into the CKAN virtual environment.
+
+As user ``ckan``::
+
+   $ . /usr/lib/ckan/default/bin/activate
+   (default)$ cd /usr/lib/ckan/default/src
+   (default)$ git clone https://github.com/geosolutions-it/ckanext-geonetwork.git
+   (default)$ cd ckanext-geonetwork
+   (default)$ python setup.py develop
+
+Once done, you have to add to CKAN the plugin ``geonetwork_harvester`` that the extension provides.
+
+To enable it, edit file ``/etc/ckan/default/production.ini`` and add the plugin::  
+
+   ckan.plugins = [...] geonetwork-clearinghouse
+      
+Then restart CKAN to make it load this new extension.  
 
 

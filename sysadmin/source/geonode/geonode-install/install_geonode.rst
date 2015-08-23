@@ -88,7 +88,8 @@ Edit settings
 As ``geonode`` user create the file ``/home/geonode/project/geonode/geonode/local_settings.py``
 and insert :download:`this content <resources/local_settings.py.txt>`.
 
-Then edit the file ``local_settings.py`` and replace passwords and the constants
+Then edit the file ``local_settings.py`` and replace passwords and constants:
+
 - ``SITEURL`` 
 - ``ALLOWED_HOSTS``
 - ``DATABASES / default / PASSWORD``: this is the password for the DB user ``geonode``

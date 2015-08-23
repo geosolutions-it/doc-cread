@@ -28,9 +28,9 @@ C-READ Hub: CKAN
 
     hub/architecture/index.rst
     hub/install/index.rst
+    hub/setup/index.rst
     hub/maintaining/index.rst
     hub/extensions/index.rst
-    hub/harvesting/index.rst
 
 
 C-READ Data: GeoNode
