@@ -25,7 +25,7 @@ By clicking the Layers link you will be brought to the Layers menu where a new s
 
 This toolbar allows you to Explore, Search and Upload layers. GeoNode allows the user to upload vector (currently only Shapefiles) and raster data in their original projections using a web form. Vector data is uploaded in ESRI Shapefile format and satellite imagery and other kinds of raster data are uploaded as GeoTIFFs.
 
-.. image:: img/GeoNode_ExploreLayers.png
+.. image:: img/C-READ_ExploreLayers.png
 
 ====
 Maps
@@ -39,7 +39,7 @@ By clicking the Maps link you will be brought to the Maps menu where a new subto
 
 This toolbar allows you create a map based on the uploaded layers combine them with some existing layers and a remote web service layer, and then share the resulting map for public viewing. Once the data has been uploaded, C-READ GeoNode lets the user search for it geographically or via keywords and create maps. All the layers are automatically reprojected to web mercator for maps display, making it possible to use different popular base layers, like Open Street Map, Google Satellite or Bing layers.
 
-.. image:: img/GeoNode_ExploreMaps.png
+.. image:: img/C-READ_ExploreMaps.png
 
 
 =========

@@ -1,7 +1,7 @@
 
-################################
+############################
 Workflows Use Cases overview
-################################
+############################
 
 These chapters describe the example workflows developed for this training. 
 
@@ -12,7 +12,7 @@ The workflows address some of the most common use cases that deal with geospatia
 - **Data dissemination** loads the data (raster or vector) on geonode.
 
 QGIS setup
---------
+----------
 
 To run the C-READ workflows, some QGIS configurations are required:
 
@@ -40,20 +40,20 @@ It is useful for:
 .. _python-requests:
 
 Python dependency installation: the request library
-====================================================
+===================================================
 
 In order to publish the QGIS processed data on geonode the publishing scripts developed requires a library called **requests** that is one of most used python library to perform HTTP requests.
 The **pyQGIS** environment provides a less advanced library called httplib2 which doesn't support the multipart Content-type.
 
 Linux Installation
-*******
+******************
 
 Since the QGIS linux version uses the system default python installation it's enough to install request through **pip**::
 
 	sudo pip install request
 	
 Windows Installation
-********
+********************
 
 The QGIS windows version uses an embedded python installation so requests can be installed copying its files in the site-package dir.
 These instructions have been tested on `QGIS - 2.10.1-Pisa` running on Windows7
@@ -66,12 +66,12 @@ These instructions have been tested on `QGIS - 2.10.1-Pisa` running on Windows7
 .. _python-custom-scripts:
 
 Python dependencies installation: the custom scripts
-========================================================
+====================================================
 
 From the Processing Workflow panel choose **Scripts** > **Add script from file** and then choose the script to import.
 
 .. figure:: img/QGIS_import_script.png
-     :width: 600px
+   :width: 600px
 	 
 The required scripts are:
 
@@ -81,23 +81,25 @@ The required scripts are:
 - publishMosaicGranule.py
 
 Vector process and publishing workflow
---------
+--------------------------------------
 
 This workflow uses a mix of QGIS build-in processing algorithms (**Step2** and **Step3**) and custom scripts implemented ad-hoc for the interaction with the C-READ platform (**Step1** and **Step4**)
 
 .. figure:: img/QGIS_Vector_workflow.png
-     :width: 350px
-*A blocks diagram of the vector workflow which identifies the 4 steps*
+   :width: 350px
+   
+   *A blocks diagram of the vector workflow which identifies the 4 steps*
 
 Open the QGIS instance and go to the :ref:`vector-workflows` page to start the tutorial.
 
 Raster process and publishing workflows
---------
+---------------------------------------
 
 This workflow uses a mix of QGIS build-in processing algorithms (**Step1** and **Step2**) and custom scripts implemented ad-hoc for the interaction with the C-READ platform (**Step3**)
 
 Open the QGIS instance and go to the :ref:`raster-workflows` page to start the tutorial
 
 .. figure:: img/QGIS_Raster_workflow.png
-     :width: 350px 
-*A blocks diagram of the raster workflows which identifies the 3 steps. The final step, the publication, could be performed as update of an Imagemosaic datastore (Geoserver) or as a standalone layer (Geonode)*
+     :width: 350px
+      
+     *A blocks diagram of the raster workflows which identifies the 3 steps. The final step, the publication, could be performed as update of an Imagemosaic datastore (Geoserver) or as a standalone layer (Geonode)*

@@ -71,8 +71,8 @@ The `Build` section is where you configure what your task actually does. Click o
 `Add build step`, a drop down menu containing a list of possible actions appears.
 In this example we choose `Execute shell`.
 
-Write your own Bash script in the text area or copy the one listed below
-::
+Write your own Bash script in the text area or copy the one listed below ::
+
     #!/bin/bash
 
     # FTP URL
@@ -152,6 +152,7 @@ Our example script does the following:
 
 Run a job
 '''''''''
+
 Click on `Build Now` to run it for the first time. Notice in the panel on the left
 shows that our new job is now running.
 
@@ -187,8 +188,8 @@ of the one in the example above, but it is a bit more articulated.
 This job is going to download the data from MyOcean using a python script called
 `motu_client` the script takes several parameters in input, including username and
 password of the user account, the id of the product to download and other parameters
-to filter the data to be downloaded like the region of interest, date and time
-::
+to filter the data to be downloaded like the region of interest, date and time ::
+
     #!/bin/bash
 
     # motu-client script path

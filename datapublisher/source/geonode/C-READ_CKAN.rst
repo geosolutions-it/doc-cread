@@ -19,6 +19,6 @@ The user interface of C-READ GeoNode System, as well as the hierarchical organiz
 - Category 9: Socio-Economic Status
 - Category 10: Critical Emergency Infrastructure
 
-.. image:: img/DataCategory.png
+.. figure:: img/DataCategory.png
 
             C-READ Data category

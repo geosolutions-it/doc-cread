@@ -1,11 +1,11 @@
 .. _raster-workflows:
 
-########################################
+#######################################
 Raster process and publishing workflows
-########################################
+#######################################
 
 Overview
----------
+--------
 
 Any raster published on a geospatial server must be optimized in order to be efficently served to the clients
 
@@ -16,7 +16,7 @@ The optimized layer will be at the end (Step 3) published on Geonode as a single
 .. image:: img/QGIS_Raster_workflow.png
 
 Step 1/3 - Retile with GDAL translate
----------
+-------------------------------------
 
 Uses GDAL-Translate to perform retiling and improve pan actions on the layer once published
 
@@ -29,7 +29,7 @@ See the `GDAL documentation <http://www.gdal.org/gdal_translate.html>`_  for mor
 - **Input Vector** Select on the file system the raster to process
 
 Step 2/3 - Add overviews with GDAL addo
----------
+---------------------------------------
 
 Uses GDAL-Addo to create overviews to improve zoom actions of the layer
 
@@ -43,7 +43,7 @@ See the `GDAL documentation <http://www.gdal.org/gdal_translate.html>`_ for more
 
 
 Step 3a/3 - Geonode raster publishing as a single layer
----------
+-------------------------------------------------------
 
 Publish the Raster layer created on a Geonode instance
 
@@ -60,8 +60,8 @@ Publish the Raster layer created on a Geonode instance
 - **Title** a geonode metadata
 - **Abstact** a geonode metadata
 
-Step 3b/3 - Geonode raster publishing as a imagemosaic  update
----------
+Step 3b/3 - Geonode raster publishing as an imagemosaic update
+--------------------------------------------------------------
 
 Update an Image mosaic with the raster layer created.
 

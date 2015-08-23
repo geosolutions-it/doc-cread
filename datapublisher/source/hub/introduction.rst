@@ -1,4 +1,4 @@
-.. _CKANdata:
+.. _hub_intro:
 
 ############
 Introduction

@@ -1,5 +1,4 @@
-.. _QGIS:
-
+.. _qgis_running_workflow:
 
 ##################
 Running a workflow

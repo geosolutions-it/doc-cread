@@ -1,4 +1,4 @@
-.. _QGIS:
+.. _qgis_overview:
 
 
 ########

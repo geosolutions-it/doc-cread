@@ -1,11 +1,11 @@
 .. _vector-workflows:
 
-########################################
+######################################
 Vector process and publishing workflow
-########################################
+######################################
 
 Overview
----------
+--------
 
 Geospatial vector data exported from third-party systems are often in CSV format.
 
@@ -20,7 +20,7 @@ The layer will be published in the last workflow step on a Geonode istance (see 
 
 
 Step 1/4 - Create a VRT file from the CSV datasource
----------
+----------------------------------------------------
 
 In order to be able to do convert a CSV in a Shapefile an intermediate format called  VRT (ViRtual Format) file must be created first.
 See the `official GDAL documentation <http://www.gdal.org/gdal_vrttut.html>`_ for more information about VRT and how to create a VRT for a CSV datasource. 
@@ -32,7 +32,7 @@ See the `official GDAL documentation <http://www.gdal.org/gdal_vrttut.html>`_ fo
 - **src Datasource file** the input CSV file absolute path (use the browse button to select it)
 
 Step 2/4 - Convert the CSV in a Shapefile
----------
+-----------------------------------------
 
 This step translate a CSV datasource in a shapefile using the VRT file previously created and import it as a layer into QGIS.
 
@@ -45,7 +45,7 @@ The conversion will be then performed using the `ogr2ogr command <http://www.gda
 - **Input Vector** the VRT created in the previous step using the input CSV
 
 Step 3/4 - Extract data using sql
----------
+---------------------------------
 
 From the dataset created in the previous step can we can extract a subset of features.
 
@@ -66,7 +66,7 @@ You can also improve that query performing a more complex filtering but be aware
 .. image:: img/vector_execution1.png
 
 Step 4/4 - Geonode vector publishing as a single layer
----------
+------------------------------------------------------
 
 Publish the Shapefile layer created on a Geonode instance
 

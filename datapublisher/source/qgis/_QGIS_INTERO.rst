@@ -1,4 +1,4 @@
-.. _QGIS:
+.. _QGIS_intero:
 
 
 ########
@@ -167,7 +167,7 @@ To add external author repositories, click [Add...] in the Plugin repositories s
 
 
 #####################
-Installing a workflow 
+Installing a workflow
 #####################
 
 After installing and activating the plugin, it also needs to be activated in Processing options which are accessible from QGIS main menu (Processing > Options and configuration). The path to the directory where the workflow files are stored (by default in the plugin directory) can also be set:
@@ -185,7 +185,7 @@ A workflow consists of a number of steps, with each step having an instruction p
 
 
 ##################
-Running a workflow 
+Running a workflow
 ##################
 New workflows can be easily added by using the Workflow Creator which can be accessed from the Processing Toolbox (Workflows > Tools > Create new workflow). Existing workflows can also be edited by right clicking on them and selecting Edit workflow:
 

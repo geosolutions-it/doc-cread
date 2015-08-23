@@ -1,4 +1,4 @@
-.. _CKANdata:
+.. _hub_data_preview:
 
 =================
 Hub: Data Preview
