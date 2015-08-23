@@ -15,7 +15,10 @@ QGIS is released under the GNU General Public License (GPL). Developing QGIS und
 ========
 Features
 ========
-QGIS offers many common GIS functionalities provided by core features and plugins. A short summary of six general categories of features and plugins is presented below, followed by first insights into the integrated Python console.
+
+QGIS offers many common GIS functionalities provided by core features and plugins. 
+A short summary of six general categories of features and plugins is presented below, 
+followed by first insights into the integrated Python console.
 
 View data
 ---------
@@ -48,6 +51,7 @@ You can compose maps and interactively explore spatial data with a friendly GUI.
 
 Create, edit, manage and export data
 ------------------------------------
+
 You can create, edit, manage and export vector and raster layers in several formats. QGIS offers the following:
 
 - Digitizing tools for OGR-supported formats and GRASS vector layers
@@ -63,19 +67,24 @@ You can create, edit, manage and export vector and raster layers in several form
 
 Analyse data
 ------------
+
 You can perform spatial data analysis on spatial databases and other OGR- supported formats. QGIS currently offers vector analysis, sampling, geoprocessing, geometry and database management tools. You can also use the integrated GRASS tools, which include the complete GRASS functionality of more than 400 modules. (See section GRASS GIS Integration.) Or, you can work with the Processing Plugin, which provides a powerful geospatial analysis framework to call native and third-party algorithms from QGIS, such as GDAL, SAGA, GRASS, fTools and more.
 
 
 Publish maps on the Internet
 ----------------------------
+
 QGIS can be used as a WMS, WMTS, WMS-C or WFS and WFS-T client, and as a WMS, WCS or WFS server. Additionally, you can publish your data on the Internet using a webserver with UMN MapServer or GeoServer installed.
+
 
 Extend QGIS functionality through plugins
 -----------------------------------------
+
 QGIS can be adapted to your special needs with the extensible plugin architecture and libraries that can be used to create plugins. You can even create new applications with C++ or Python!
 
 Core Plugins
 ^^^^^^^^^^^^
+
 Core plugins include:
 
 1. Coordinate Capture (Capture mouse coordinates in different CRSs)
@@ -103,7 +112,6 @@ Core plugins include:
 
 External Python Plugins
 ^^^^^^^^^^^^^^^^^^^^^^^
-QGIS offers a growing number of external Python plugins that are provided by the community. These plugins reside in the official Plugins Repository and can be easily installed using the Python Plugin Installer
-
-
+QGIS offers a growing number of external Python plugins that are provided by the community. 
+These plugins reside in the official Plugins Repository and can be easily installed using the Python Plugin Installer.
 

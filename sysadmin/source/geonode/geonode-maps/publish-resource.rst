@@ -27,8 +27,8 @@ http://data.cread.geo-solutions.it/ web-portal with administrative credential an
 
 3. Select the button **PUBLISH** in the upper right corner of the form 
 
-  .. image:: img/geonode_publish_button.png
-             :width: 640
+  .. image:: img/publish_button.png
+
 
 4. Once clicked, the resource will be published and the button will change in **UNPUBLISH**.
 

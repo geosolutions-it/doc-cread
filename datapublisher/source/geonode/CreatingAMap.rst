@@ -1,4 +1,4 @@
-.. _data:
+.. _geonode_create_map:
 
 
 ##############

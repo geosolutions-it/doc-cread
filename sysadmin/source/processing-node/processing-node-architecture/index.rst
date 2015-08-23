@@ -1,12 +1,14 @@
 .. _processing_node_architecture:
 
-################################
-C-READ Processing Node: Overview
-################################
+#########################
+Processing Node: Overview
+#########################
 
-The `C-READ Processing Node` is an application that monitors executions of repeated
-jobs an it is based on `Jenkins <https://jenkins-ci.org/>`_ and `GDAL <http://www.gdal.org/>`
+The `C-READ Processing Node` runs `Jenkins <https://jenkins-ci.org/>`_, 
+an application that monitors executions of repeated jobs.
 
+There are also some required libraries installed on the system, such as the `GDAL utilities <http://www.gdal.org/>`_,
+used to perform some basic data transformations. 
 
 All the software used in this project is release under open source licences.
 Namely:

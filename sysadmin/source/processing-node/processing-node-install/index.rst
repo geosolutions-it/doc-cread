@@ -1,11 +1,14 @@
 .. _installation_index:
 
-C-READ Processing Node: Installation Guide
-==========================================
+Jenkins: Installation Guide
+===========================
 
 .. toctree::
    :maxdepth: 2
 
    setup_vm.rst
    setup_centos.rst
-   apps_install_and_config.rst
+   install_ftp
+   install_jenkins
+   install_httpd
+   install_gdal   

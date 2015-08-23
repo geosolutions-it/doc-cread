@@ -18,8 +18,10 @@ Installation from source
 
 If you need to build QGIS from source, please refer to the installation instructions. They are distributed with the QGIS source code in a file called INSTALL. You can also find them online at http://htmlpreview.github.io/?https://raw.github.com/qgis/QGIS/master/doc/INSTALL.html
 
+
 Installation on external media
 ------------------------------
+
 QGIS allows you to define a configpath option that overrides the default path for user configuration (e.g., ~/.qgis2 under Linux) and forces QSettings to use this directory, too. This allows you to, for instance, carry a QGIS installation on a flash drive together with all plugins and settings.
 
 

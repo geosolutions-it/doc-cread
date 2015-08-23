@@ -43,8 +43,8 @@ C-READ Data: GeoNode
     geonode/geonode-install/index.rst
     geonode/geonode-maps/index.rst
 
-C-READ Processing Node
-----------------------
+C-READ Processing Node: Jenkins
+-------------------------------
 
 .. toctree::
     :maxdepth: 1
