@@ -67,6 +67,9 @@ In the `Build Triggers` section you configure which events will start a new buil
 of your project. For example a new build can be triggered by a timer or a change
 in a `Git` repository.
 
+Check out :doc:`./git-intro` for a brief introduction to Git
+
+
 The `Build` section is where you configure what your task actually does. Click on
 `Add build step`, a drop down menu containing a list of possible actions appears.
 In this example we choose `Execute shell`.
