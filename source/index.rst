@@ -9,13 +9,6 @@ From here you can navigate browse the documentation relative to the C-READ proje
 
 The Documentation is divided in two main sections:
 
-The Data Publisher Guide
-------------------------
-
-The `Data Publisher Guide <./datapublisher/index.html>`_
-
-section where you can find all the information related to data and datasets management.
-
 The System Administrators Guide
 -------------------------------
 
@@ -23,6 +16,14 @@ The `System Administrators Guide <./sysadmin/index.html>`_
 
 section where system administrators will find all the informations related to the
 installation, deploy and configuration of the applications related to the project.
+
+The Data Publisher Guide
+------------------------
+
+The `Data Publisher Guide <./datapublisher/index.html>`_
+
+section where you can find all the information related to data and datasets management.
+
 
 License Information
 -------------------
