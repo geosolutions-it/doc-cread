@@ -1,9 +1,9 @@
 .. _mainindex.rst:
 
-C-READ Project
-==============
+C-READ Project System Administration Documentation
+====================================================
 
-Welcome to the C-READ System Administration documentation v\ |release|.
+Welcome to the C-READ System Administration documentation version *v\ |release|.*
 
 This documentation is a guide describing the system architecture and how to setup and administer the various components of the system.
 
