@@ -24,6 +24,18 @@ The `Data Publisher Guide <./datapublisher/index.html>`_
 
 section where you can find all the information related to data and datasets management.
 
+Editing the documentation
+-------------------------
+
+This documentation is written in `reStructuredText <https://en.wikipedia.org/wiki/ReStructuredText>`_ format
+and automatically build from `this GitHub repository <https://github.com/geosolutions-it/doc-cread>`_
+To edit the documentation you'll need the following tools:
+
+- `Git <http://en.wikipedia.org/wiki/Git_(software)>`_
+- `Python <https://www.python.org/>`_ and `pip <https://en.wikipedia.org/wiki/Pip_(package_manager)>`_ (recent versions of Python come bundled with pip)
+- `Sphinx <http://sphinx-doc.org/index.html>`_
+
+For installation and basic usage of the tools follow `these <./install-doc-tools.html>`_ instructions
 
 License Information
 -------------------
