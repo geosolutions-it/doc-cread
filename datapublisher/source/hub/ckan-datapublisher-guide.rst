@@ -184,7 +184,7 @@ in.)
 
 **Step 4**. CKAN will display the "Add data" screen.
 
-.. image:: /images/add_dataset_2.jpg
+.. image:: ../images/add_dataset_2.jpg
 
 This is where you will add one or more "resources" which contain the data for
 this dataset. Choose a file or link for your data resource and select the
