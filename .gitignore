@@ -38,3 +38,6 @@ nosetests.xml
 # Text Editor temporary files
 *~
 *.swp
+
+
+.DS_Store
