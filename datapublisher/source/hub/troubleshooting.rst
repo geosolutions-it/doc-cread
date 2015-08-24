@@ -65,5 +65,6 @@ edit (in this example `METOFFICE_GLO_SST_L4_NRT_OBS_SKIN_DIU_1438879768913`)
 
 - Save the configuration and logout
 
-- Now navigate to the `C-READ Hub <http://data.cread.geo-solutions.it>`_ , login
-as administrator and schedule a re-harvest of the dataset as exmplained above
+- Now navigate to the `C-READ Hub <http://data.cread.geo-solutions.it>`_ , login as administrator and schedule a re-harvest of the dataset as explained above.
+
+After the harvest if terminated you should be able to see the new data in the Hub
