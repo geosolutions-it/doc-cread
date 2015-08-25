@@ -19,3 +19,11 @@ Namely:
 
 This document provides information on how to setup a CentOS 7 machine with Jenkins
 and GDAL to automate the download, processing and harvesting of new data into GeoNode.
+
+Components overview
+===================
+
+This is the block diagram of the processing node:
+
+.. image:: img/jenkins_deploy.png
+  :align: center

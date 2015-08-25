@@ -72,7 +72,7 @@ Then download and deploy the latest LTS ( at the time of writing 1.609.2) war fo
 
 Now enable automatic startup creating this symlink::
 
-    ln-s /etc/systemd/system/tomcat\@.service /usr/lib/systemd/system/multi-user.target.wants/tomcat@jenkins.service
+    ln -s /etc/systemd/system/tomcat\@.service /usr/lib/systemd/system/multi-user.target.wants/tomcat@jenkins.service
 
 Basic installation is finished. We can now start Jenkins. By default Jenkins will
 listen to requests on port 8080. To test the installation temporarily open port
