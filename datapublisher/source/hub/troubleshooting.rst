@@ -44,7 +44,7 @@ In the top right corner of the panel there is a `Reharvest` button. Click on the
 button to manually schedule a new harvest of the data. A new harvest will run within
 the next 15 minutes. You can follow the progress of the job in the `dashboard`
 
-.. image::
+.. image:: ./img/hub-reharvest.png
 
 New layer does not show up in the Hub
 -------------------------------------

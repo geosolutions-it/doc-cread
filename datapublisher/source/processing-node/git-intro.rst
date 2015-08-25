@@ -13,7 +13,7 @@ become one of the most widely adopted version control systems for software devel
 Git Installation
 ----------------
 
-Installing Git is pretty straightforward, refer to `this <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`
+Installing Git is pretty straightforward, refer to `this <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`_
 page for instructions on how to install it on your Operating System.
 
 Git configuration
@@ -46,7 +46,8 @@ repository:
     git clone https://github.com/geosolutions-it/doc-cread.git
     cd doc-cread
 
-For more information on how to `clone` a remote repository refer to this document <http://git-scm.com/docs/git-clone>`_
+For more information on how to `clone` a remote repository refer to `this document <http://git-scm.com/docs/git-clone>`_
+
 Setup a repository on GitHub
 ----------------------------
 
