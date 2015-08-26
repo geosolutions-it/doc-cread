@@ -34,8 +34,8 @@ C-READ Processing Node
 
     processing-node/index.rst
 
-C-READ Desktop Workflow Node
-----------------------------
+QGIS
+----
 
 .. toctree::
     :maxdepth: 1

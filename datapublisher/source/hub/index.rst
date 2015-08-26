@@ -10,4 +10,3 @@ User guide
     ckan-datapublisher-guide.rst
     DataPreview.rst
     MapPreview.rst
-    troubleshooting.rst

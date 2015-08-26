@@ -36,7 +36,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General substitutions.
-project = u'Datapublisher'
+project = u'Data Publisher'
 manual = u'doc'
 copyright = u'2015 GeoSolutions'
 
@@ -46,7 +46,7 @@ copyright = u'2015 GeoSolutions'
 # The short X.Y version.
 version = '1.0'
 # The full version, including alpha/beta/rc tags.
-release = '20150807'
+release = '201508026'
 
 language = 'en'
 
@@ -153,7 +153,7 @@ html_use_index = True
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'drdsidoc'
+htmlhelp_basename = 'creaddoc'
 
 
 # Options for LaTeX output
@@ -168,7 +168,7 @@ latex_font_size = '11pt'
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
-latex_documents = [('index', 'doc-drdsi.tex', u'DRDSI Documentation', u'ETj (GeoSolutions)', 'manual')]
+latex_documents = [('index', 'doc-cread.tex', u'C-READ Documentation', u'ETj (GeoSolutions)', 'manual')]
 
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -193,6 +193,6 @@ latex_logo = 'geosolutions.png'
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [('index', 'doc-drdsi', u'DRDSI Documentation', [u'ETj (GeoSolutions)'], 1)]
+man_pages = [('index', 'doc-cread', u'C-READ Documentation', [u'ETj (GeoSolutions)'], 1)]
 
 

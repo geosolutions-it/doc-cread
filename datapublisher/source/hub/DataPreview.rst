@@ -4,8 +4,13 @@
 Hub: Data Preview
 =================
 
-The C-READ GeoNode web interface is the primary method of interacting with C-READ GeoNode as a user. From this interface, one can view and modify existing spatial layers and maps, as well as find information on other C-READ GeoNode users.
-Without being logged in, you are limited to read-only access of public layers.
+The C-READ hub web interface is the primary method for interacting with the C-READ
+system as a user. 
+Using this interface, one can search and view the resources registered in the catalog,
+such as spatial layers, maps, text documents and gridded data.
+
+In the C-READ context users are limited to read-only access to all the resources, 
+since the data ingestion will be performed on the data node, implemented by GeoNode and GeoServer. 
 
 Choose a dataset and click on dataset name.
 

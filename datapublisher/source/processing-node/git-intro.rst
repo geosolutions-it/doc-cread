@@ -1,10 +1,13 @@
+.. _data_git_intro:
+
 Git introduction
 ================
 
 Overview
 --------
 
-`Git <https://en.wikipedia.org/wiki/Git_(software)>`_ is a distributed revision control system with an emphasis on speed, data integrity,
+`Git <https://en.wikipedia.org/wiki/Git_(software)>`_ is a distributed revision 
+control system with an emphasis on speed, data integrity,
 and support for distributed, non-linear workflows. Git was initially designed and
 developed by Linus Torvalds for Linux kernel development in 2005, and has since
 become one of the most widely adopted version control systems for software development.
@@ -19,8 +22,8 @@ page for instructions on how to install it on your Operating System.
 Git configuration
 -----------------
 
-Before you start using Git set your name and email address:
-::
+Before you start using Git set your name and email address::
+
     git config --global user.email email@yourdomain.com
     git config --global user.name 'Name Surname'
 
@@ -28,8 +31,8 @@ Setup a new project
 -------------------
 
 You can either start from scratch or `clone` an existing Git `repository`.
-Lets create a new Git repository:
-::
+Lets create a new Git repository::
+
     mkdir testproject
     cd testproject
     git init
@@ -41,12 +44,13 @@ Clone an existing repository
 
 If instead of starting from scratch you want to work on an existing repository,
 `clone` it using the `git clone` command. For example to clone this documentation
-repository:
-::
+repository::
+
     git clone https://github.com/geosolutions-it/doc-cread.git
     cd doc-cread
 
-For more information on how to `clone` a remote repository refer to `this document <http://git-scm.com/docs/git-clone>`_
+For more information on how to `clone` a remote repository 
+refer to `the clone doc page <http://git-scm.com/docs/git-clone>`_
 
 Setup a repository on GitHub
 ----------------------------
@@ -63,13 +67,14 @@ Clone your repository locally as explained above to start working on it
 Make changes
 ------------
 
-Create a new file called `test.txt` and edit it with your favorite editor
-::
+Create a new file called `test.txt` and edit it with your favorite editor::
+
     vim test.txt
 
-Save changes to the file and run `git status`
-::
+Save changes to the file and run `git status`::
+
     git status
+
     On branch master
 
     Initial commit
@@ -87,12 +92,12 @@ to the file
 Commit the changes
 ------------------
 
-To commit the changes, run the following command:
-::
+To commit the changes, run the following command::
+
     git add test.txt
 
-If you run `git status` now
-::
+If you run `git status` now ::
+
     git status
     On branch master
 
@@ -104,16 +109,16 @@ If you run `git status` now
     	new file:   test.txt
 
 You can see the new file added to `the staging area` waiting to be committed.
-Lets commit the changes to make them "permanent"
-::
+Lets commit the changes to make them "permanent"::
+
     > git commit 'first commit'
     [master (root-commit) 16542aa] first commit
      1 file changed, 1 insertion(+)
      create mode 100644 test.txt
 
 All your changes have benn committed to your local repository. Run `git log`
-to view the commit history of the repository:
-::
+to view the commit history of the repository::
+
     > git log
     commit 16542aa9810c50b6af7729c2375ebfa77364c68d
     Author: Alessandro Parma <alessa.parma@gmail.com>
@@ -127,8 +132,8 @@ For more information on `git commit` refer to this document <http://git-scm.com/
 -----------------------------
 
 If you cloned the repository from GitHub you may want to upload your work to the online
-repository. The command you need to use is `git push`
-::
+repository. The command you need to use is ``git push`` ::
+
     git push origin master
 
 where `origin` is the default name given to the remote repository and `master` is
